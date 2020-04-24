@@ -27,7 +27,8 @@ const Gallery = ({ images }) => {
           >
             <img src={obj.thumbnail} alt="" />
           </a>
-          <h3> {obj.caption} </h3> <p> {obj.description} </p>{' '}
+          <h3> {obj.caption} </h3> <p> {obj.description} </p>
+          <a href={obj.link}>Check it in Github</a>
         </article>
       )
     })
@@ -36,16 +37,14 @@ const Gallery = ({ images }) => {
   }
   return (
     <div>
-      {' '}
-      {renderGallery(images)}{' '}
+      {renderGallery(images)}
       <ModalGateway>
-        {' '}
         {lightboxIsOpen && (
           <Modal onClose={toggleLightbox}>
-            <Carousel currentIndex={selectedIndex} views={images} />{' '}
+            <Carousel currentIndex={selectedIndex} views={images} />
           </Modal>
-        )}{' '}
-      </ModalGateway>{' '}
+        )}
+      </ModalGateway>
     </div>
   )
 }

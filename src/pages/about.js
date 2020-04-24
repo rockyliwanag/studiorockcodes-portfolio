@@ -1,7 +1,8 @@
 import React from 'react'
 import Helmet from 'react-helmet'
-import { Link } from 'gatsby'
+// import { Link } from 'gatsby'
 import Layout from '../components/layout'
+import downloadFile from '../downloads/Rocky-Resume.pdf'
 
 export default () => {
   const siteTitle = 'StudioRock - Portfolio'
@@ -13,12 +14,11 @@ export default () => {
         <meta name="description" content={siteDescription} />{' '}
       </Helmet>{' '}
       <div className="main">
-        <a href="/" className="icon fa-arrow-left">
-          {' '}
-          &nbsp; BACK
-        </a>
         <h2> Hello again! </h2> <p> This is more about myself! </p>
-        <Link to="/contact"> Contact Me </Link>
+        <a href={downloadFile} download>
+          Download Resume
+        </a>
+        {` `}
       </div>
     </Layout>
   )

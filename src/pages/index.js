@@ -70,61 +70,63 @@ const HomeIndex = () => {
       <Helmet>
         <title> {siteTitle} </title>{' '}
         <meta name="description" content={siteDescription} />{' '}
-      </Helmet>{' '}
+      </Helmet>
       <div className="main">
         <section id="one">
           <header className="major">
             <h2>
-              Ipsum lorem dolor aliquam ante commodo <br />
-              magna sed accumsan arcu neque.{' '}
-            </h2>{' '}
-          </header>{' '}
+              Welcome to StudioRock. <br />
+              Please, look around.
+            </h2>
+          </header>
           <p>
             Accumsan orci faucibus id eu lorem semper.Eu ac iaculis ac nunc nisi
             lorem vulputate lorem neque cubilia ac in adipiscing in curae
             lobortis tortor primis integer massa adipiscing id nisi accumsan
             pellentesque commodo blandit enim arcu non at amet id arcu
             magna.Accumsan orci faucibus id eu lorem semper nunc nisi lorem
-            vulputate lorem neque cubilia.{' '}
-          </p>{' '}
+            vulputate lorem neque cubilia.
+          </p>
           <ul className="actions">
             <li>
               <Link to="/about" className="button">
-                Learn More{' '}
-              </Link>{' '}
-            </li>{' '}
-          </ul>{' '}
-        </section>{' '}
+                Learn More
+              </Link>
+            </li>
+          </ul>
+        </section>
         <section id="two">
-          <h2> Recent Work </h2>{' '}
+          <h2> Recent Work </h2>
           <Gallery
             images={DEFAULT_IMAGES.map(
               ({ id, source, thumbnail, caption, description }) => ({
+                id,
                 source,
                 thumbnail,
                 caption,
                 description,
               })
             )}
-          />{' '}
+          />
           <ul className="actions">
             <li>
               <Link to="/portfolio" className="button">
-                Full Portfolio{' '}
-              </Link>{' '}
-            </li>{' '}
-          </ul>{' '}
-        </section>{' '}
+                Full Portfolio
+              </Link>
+            </li>
+          </ul>
+        </section>
         <section id="three">
-          <h2> Get In Touch </h2>{' '}
+          <h2> Get In Touch </h2>
           <p>
-            Accumsan pellentesque commodo blandit enim arcu non at amet id arcu
-            magna.Accumsan orci faucibus id eu lorem semper nunc nisi lorem
-            vulputate lorem neque lorem ipsum dolor.{' '}
-          </p>{' '}
+            Yes. Please keep in touch. You can send me a message, and I will
+            reply as promptly as possible. I would love to answer any question
+            you may have about my work. Have a blessed day!
+          </p>
           <div className="row">
             <div className="8u 12u$(small)">
               <form method="post" action="#">
+                {/*Form Action*/}
                 <div className="row uniform 50%">
                   <div className="6u 12u$(xsmall)">
                     <input
@@ -133,7 +135,7 @@ const HomeIndex = () => {
                       id="name"
                       placeholder="Name"
                     />
-                  </div>{' '}
+                  </div>
                   <div className="6u 12u$(xsmall)">
                     <input
                       type="email"
@@ -141,16 +143,16 @@ const HomeIndex = () => {
                       id="email"
                       placeholder="Email"
                     />
-                  </div>{' '}
+                  </div>
                   <div className="12u">
                     <textarea
                       name="message"
                       id="message"
                       placeholder="Message"
                       rows="4"
-                    ></textarea>{' '}
-                  </div>{' '}
-                </div>{' '}
+                    ></textarea>
+                  </div>
+                </div>
                 <ul
                   className="actions"
                   style={{
@@ -159,40 +161,39 @@ const HomeIndex = () => {
                 >
                   <li>
                     <input type="submit" value="Send Message" />
-                  </li>{' '}
-                </ul>{' '}
-              </form>{' '}
-            </div>{' '}
+                  </li>
+                </ul>
+              </form>
+            </div>
             <div className="4u 12u$(small)">
               <ul className="labeled-icons">
                 <li>
                   <h3 className="icon fa-home">
-                    <span className="label"> Address </span>{' '}
+                    <span className="label"> Address </span>
                   </h3>
                   24253 Hazelnut Ave <br />
                   Murrieta, CA 92562 <br />
-                  United States{' '}
-                </li>{' '}
+                  United States
+                </li>
                 <li>
                   <h3 className="icon fa-mobile">
-                    <span className="label"> Phone </span>{' '}
+                    <span className="label"> Phone </span>
                   </h3>
-                  562 - 208 - 3126{' '}
-                </li>{' '}
+                  562 - 208 - 3126
+                </li>
                 <li>
                   <h3 className="icon fa-envelope-o">
-                    <span className="label"> Email </span>{' '}
-                  </h3>{' '}
+                    <span className="label"> Email </span>
+                  </h3>
                   <a href="mailto:rocky.liwanag@outlook.com?Subject=Portfolio%20message">
-                    {' '}
-                    rocky.liwanag @outlook.com{' '}
-                  </a>{' '}
-                </li>{' '}
-              </ul>{' '}
-            </div>{' '}
-          </div>{' '}
-        </section>{' '}
-      </div>{' '}
+                    rocky.liwanag @outlook.com
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </div>
     </Layout>
   )
 }

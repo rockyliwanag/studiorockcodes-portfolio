@@ -25,8 +25,8 @@ export default () => {
               <form
                 method="post"
                 name="contact"
-                data-netlify="true"
-                data-netlify-honeypot="bot-field"
+                // data-netlify="true"
+                // data-netlify-honeypot="bot-field"
               >
                 <div className="row uniform 50%">
                   <div className="6u 12u$(xsmall)">

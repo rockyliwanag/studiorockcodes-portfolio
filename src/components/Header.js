@@ -9,13 +9,13 @@ const Header = () => (
     <div className="inner">
       <a href="/" className="image avatar">
         <img src={avatar} alt="" />
-      </a>{' '}
+      </a>
       <h1>
         <strong> I am Rocky </strong>, a graphic designer <br />
         turned software developer. <br />
-        studiorock is my digital playground.{' '}
-      </h1>{' '}
-    </div>{' '}
+        studiorock is my digital playground.
+      </h1>
+    </div>
     <div>
       <Link to="/">
         <h3>Home</h3>

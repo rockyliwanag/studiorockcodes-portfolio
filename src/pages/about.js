@@ -10,15 +10,14 @@ export default () => {
   return (
     <Layout>
       <Helmet>
-        <title> {siteTitle} </title>{' '}
-        <meta name="description" content={siteDescription} />{' '}
-      </Helmet>{' '}
+        <title> {siteTitle} </title>
+        <meta name="description" content={siteDescription} />
+      </Helmet>
       <div className="main">
         <h2> Hello again! </h2> <p> This is more about myself! </p>
         <a href={downloadFile} download>
           Download Resume
         </a>
-        {` `}
       </div>
     </Layout>
   )

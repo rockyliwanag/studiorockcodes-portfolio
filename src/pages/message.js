@@ -61,7 +61,7 @@ export default () => {
                   }}
                 >
                   <li>
-                    <input type="submit" value="Send Message" />
+                    <button type="submit">Send Message</button>
                   </li>
                 </ul>
               </form>

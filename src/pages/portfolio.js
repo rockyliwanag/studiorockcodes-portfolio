@@ -9,12 +9,11 @@ export default () => {
   return (
     <Layout>
       <Helmet>
-        <title> {siteTitle} </title>{' '}
-        <meta name="description" content={siteDescription} />{' '}
-      </Helmet>{' '}
+        <title> {siteTitle} </title>
+        <meta name="description" content={siteDescription} />
+      </Helmet>
       <div className="main">
         <a href="/" className="icon fa-arrow-left">
-          {' '}
           &nbsp; BACK
         </a>
         <h2> Portfolio Page! </h2> <p> This is a portfolio page. </p>

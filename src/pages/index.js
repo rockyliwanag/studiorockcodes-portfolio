@@ -117,6 +117,7 @@ const HomeIndex = () => {
                 name="contact"
                 data-netlify="true"
                 data-netlify-honeypot="bot-field"
+                action="/"
               >
                 {/*Form Action*/}
                 <div className="row uniform 50%">

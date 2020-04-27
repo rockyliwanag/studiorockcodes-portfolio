@@ -23,10 +23,11 @@ export default () => {
           <div className="row">
             <div className="8u 12u$(small)">
               <form
-                method="post"
+                method="POST"
                 name="contact-message"
                 data-netlify="true"
                 data-netlify-honeypot="bot-field"
+                action="/message"
               >
                 <div className="row uniform 50%">
                   <div className="6u 12u$(xsmall)">

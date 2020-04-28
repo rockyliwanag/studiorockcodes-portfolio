@@ -16,13 +16,13 @@ export default () => {
         <section className="three">
           <h2> Get In Touch </h2>
           <p>
-            Accumsan pellentesque commodo blandit enim arcu non at amet id arcu
-            magna.Accumsan orci faucibus id eu lorem semper nunc nisi lorem
-            vulputate lorem neque lorem ipsum dolor.
+            Yes.Please keep in touch.You can send me a message, and I will reply
+            as promptly as possible.I would love to answer any question you may
+            have about my work.Have a blessed day!
           </p>
           <div className="row">
             <div className="8u 12u$(small)">
-              <form
+              {/* <form
                 method="POST"
                 name="contact-message"
                 data-netlify="true"
@@ -66,8 +66,8 @@ export default () => {
                   </li>
                 </ul>
               </form>
-            </div>
-            <div className="4u 12u$(small)">
+            </div> */}
+              {/* <div className="4u 12u$(small)"> */}
               <ul className="labeled-icons">
                 <li>
                   <h3 className="icon fa-home">

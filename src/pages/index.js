@@ -66,12 +66,11 @@ const HomeIndex = () => {
             </h2>
           </header>
           <p>
-            Accumsan orci faucibus id eu lorem semper.Eu ac iaculis ac nunc nisi
-            lorem vulputate lorem neque cubilia ac in adipiscing in curae
-            lobortis tortor primis integer massa adipiscing id nisi accumsan
-            pellentesque commodo blandit enim arcu non at amet id arcu
-            magna.Accumsan orci faucibus id eu lorem semper nunc nisi lorem
-            vulputate lorem neque cubilia.
+            Thank you for taking the time to check out my site. This is the
+            initial version, but you can expect it to change and take form in
+            time. Same with my coding projects in my Portfolio, all of them were
+            made in a 1 week period while learning Software Engineering at
+            General Assembly.
           </p>
           <ul className="actions">
             <li>
@@ -112,7 +111,7 @@ const HomeIndex = () => {
           </p>
           <div className="row">
             <div className="8u 12u$(small)">
-              <form
+              {/* <form
                 method="POST"
                 name="contact"
                 data-netlify="true"
@@ -157,8 +156,8 @@ const HomeIndex = () => {
                   </li>
                 </ul>
               </form>
-            </div>
-            <div className="4u 12u$(small)">
+            </div> */}
+              {/* <div className="4u 12u$(small)"> */}
               <ul className="labeled-icons">
                 <li>
                   <h3 className="icon fa-home">

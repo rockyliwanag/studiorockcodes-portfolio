@@ -277,6 +277,11 @@ header {
   }
 }
 
+#project-entry {
+  display: flex;
+  justify-content: space-between;
+}
+
 /* Form */
 
 form {

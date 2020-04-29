@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import PropTypes from 'prop-types'
 import Carousel, { Modal, ModalGateway } from 'react-images'
+import { Link } from 'gatsby'
 
 const Gallery = ({ images }) => {
   const [lightboxIsOpen, setLightboxIsOpen] = useState(false)
@@ -28,9 +29,10 @@ const Gallery = ({ images }) => {
             <img src={obj.thumbnail} alt="" />
           </a>
           <h3> {obj.caption} </h3> <p> {obj.description} </p>
-          <a href={obj.github}>Check it on Github</a> &nbsp; &nbsp; &nbsp;
-          &nbsp;
-          <a href={obj.site}>Visit Site</a>
+          <Link to={obj.info}>More Info</Link> &nbsp; &nbsp; &nbsp; &nbsp;
+          <a href={obj.site} target="_blank" rel="noopener noreferrer">
+            Visit Site
+          </a>
         </article>
       )
     })

@@ -21,6 +21,7 @@ const DEFAULT_IMAGES = [
     caption: 'Project 1 - Blackjack',
     description: 'HTML/CSS/Javascript',
     github: 'https://github.com/rockyliwanag/Blackjack',
+    info: '/project-1-blackjack',
     site: 'https://rockyliwanag.github.io/Blackjack/',
   },
   {
@@ -30,6 +31,7 @@ const DEFAULT_IMAGES = [
     caption: 'Project 2 - [bib.lio.file]',
     description: 'HTML/CSS/Javascript/Mongoose/Express.js/Node.js',
     github: 'https://github.com/rockyliwanag/bib-yo-file',
+    info: '/project-2-bibliofile',
     site: 'https://bib-lio-file.herokuapp.com',
   },
   {
@@ -39,6 +41,7 @@ const DEFAULT_IMAGES = [
     caption: 'Project 3 - Mailman',
     description: 'Python/Django/Postgresql',
     github: 'https://github.com/RyanBranco/Mailman',
+    info: '/project-3-mailman',
     site: 'https://mail-man-app.herokuapp.com',
   },
   {
@@ -48,6 +51,7 @@ const DEFAULT_IMAGES = [
     caption: 'Project 4 - SWANK',
     description: 'HTML/CSS/Javascript/Mongoose/Express/React/Node',
     github: 'https://github.com/rockyliwanag/SWANK',
+    info: '/project-4-swank',
     site: 'https://swank.herokuapp.com',
   },
 ]
@@ -76,8 +80,8 @@ const HomeIndex = () => {
           <p>
             Thank you for taking the time to check out my site. This is the
             initial version, but you can expect it to change and take form in
-            time. I'm also continously working on all of my coding projects and
-            finish my icebox features.
+            time. I'm also continously working on all of my coding projects,
+            implementing icebox features.
           </p>
           <ul className="actions">
             <li>
@@ -97,7 +101,7 @@ const HomeIndex = () => {
                 thumbnail,
                 caption,
                 description,
-                github,
+                info,
                 site,
               }) => ({
                 id,
@@ -105,7 +109,7 @@ const HomeIndex = () => {
                 thumbnail,
                 caption,
                 description,
-                github,
+                info,
                 site,
               })
             )}

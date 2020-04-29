@@ -66,15 +66,15 @@ const HomeIndex = () => {
           <header className="major">
             <h2>
               <span>Welcome to StudioRock.</span> <br />
-              Please, look around.
+              Please, poke around.
             </h2>
+            <div></div>
           </header>
           <p>
             Thank you for taking the time to check out my site. This is the
             initial version, but you can expect it to change and take form in
-            time. Same with my coding projects in my Portfolio, all of them were
-            made in a 1 week period while learning Software Engineering at
-            General Assembly.
+            time. I'm also continously working on all of my coding projects and
+            finish my icebox features.
           </p>
           <ul className="actions">
             <li>

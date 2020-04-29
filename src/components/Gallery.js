@@ -28,7 +28,9 @@ const Gallery = ({ images }) => {
             <img src={obj.thumbnail} alt="" />
           </a>
           <h3> {obj.caption} </h3> <p> {obj.description} </p>
-          <a href={obj.link}>Check it in Github</a>
+          <a href={obj.github}>Check it on Github</a> &nbsp; &nbsp; &nbsp;
+          &nbsp;
+          <a href={obj.site}>Visit Site</a>
         </article>
       )
     })

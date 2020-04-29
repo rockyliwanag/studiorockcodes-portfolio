@@ -13,11 +13,17 @@ export default () => {
         <title> {siteTitle} </title>
         <meta name="description" content={siteDescription} />
       </Helmet>
-      <div className="main">
-        <h2> Hello again! </h2> <p> This is more about myself! </p>
-        <a href={downloadFile} download>
-          Download Resume
-        </a>
+      <div className="about">
+        <div className="main">
+          <h2> Hello again! </h2>{' '}
+          <p>
+            My name is, Rocky Liwanag. We migrated here from the Philippines in
+            1989.{' '}
+          </p>
+          <a href={downloadFile} download>
+            Download Resume
+          </a>
+        </div>
       </div>
     </Layout>
   )

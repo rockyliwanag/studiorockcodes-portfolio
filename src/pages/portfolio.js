@@ -13,11 +13,11 @@ export default () => {
         <meta name="description" content={siteDescription} />
       </Helmet>
       <div className="main">
-        <a href="/" className="icon fa-arrow-left">
-          &nbsp; BACK
-        </a>
+        <Link to="/">
+          <div className="icon fa-arrow-left">&nbsp;BACK</div>
+        </Link>
         <h2> Portfolio Page! </h2> <p> This is a portfolio page. </p>
-        <Link to="/contact"> Contact Me </Link>
+        <Link to="/message"> Contact Me </Link>
       </div>
     </Layout>
   )

@@ -19,7 +19,8 @@ const DEFAULT_IMAGES = [
     thumbnail: thumb01,
     caption: 'Project 4 - SWANK',
     description: 'HTML/CSS/Javascript/Mongoose/Express/React/Node',
-    link: 'https://github.com/rockyliwanag/SWANK',
+    github: 'https://github.com/rockyliwanag/SWANK',
+    site: 'https://swank.herokuapp.com',
   },
   {
     id: '2',
@@ -27,7 +28,8 @@ const DEFAULT_IMAGES = [
     thumbnail: thumb02,
     caption: 'Project 3 - Mailman',
     description: 'Python/Django/Postgresql',
-    link: 'https://github.com/RyanBranco/Mailman',
+    github: 'https://github.com/RyanBranco/Mailman',
+    site: 'https://mail-man-app.herokuapp.com',
   },
   {
     id: '3',
@@ -35,7 +37,8 @@ const DEFAULT_IMAGES = [
     thumbnail: thumb03,
     caption: 'Project 2 - [bib.lio.file]',
     description: 'HTML/CSS/Javascript/Mongoose/Express.js/Node.js',
-    link: 'https://github.com/rockyliwanag/bib-yo-file',
+    github: 'https://github.com/rockyliwanag/bib-yo-file',
+    site: 'https://bib-lio-file.herokuapp.com',
   },
   {
     id: '4',
@@ -43,7 +46,8 @@ const DEFAULT_IMAGES = [
     thumbnail: thumb04,
     caption: 'Project 1 - Blackjack',
     description: 'HTML/CSS/Javascript',
-    link: 'https://github.com/rockyliwanag/Blackjack',
+    github: 'https://github.com/rockyliwanag/Blackjack',
+    site: 'https://rockyliwanag.github.io/Blackjack/',
   },
 ]
 
@@ -61,7 +65,7 @@ const HomeIndex = () => {
         <section id="one">
           <header className="major">
             <h2>
-              Welcome to StudioRock. <br />
+              <span>Welcome to StudioRock.</span> <br />
               Please, look around.
             </h2>
           </header>
@@ -84,13 +88,22 @@ const HomeIndex = () => {
           <h2> Recent Work </h2>
           <Gallery
             images={DEFAULT_IMAGES.map(
-              ({ id, source, thumbnail, caption, description, link }) => ({
+              ({
                 id,
                 source,
                 thumbnail,
                 caption,
                 description,
-                link,
+                github,
+                site,
+              }) => ({
+                id,
+                source,
+                thumbnail,
+                caption,
+                description,
+                github,
+                site,
               })
             )}
           />

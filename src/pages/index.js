@@ -8,6 +8,7 @@ import thumb01 from '../assets/images/thumbs/01.jpg'
 import thumb02 from '../assets/images/thumbs/02.jpg'
 import thumb03 from '../assets/images/thumbs/03.jpg'
 import thumb04 from '../assets/images/thumbs/04.jpg'
+import logo from '../assets/images/website-icon.png'
 import Gallery from '../components/Gallery'
 import Layout from '../components/layout'
 import { Link } from 'gatsby'
@@ -17,37 +18,37 @@ const DEFAULT_IMAGES = [
     id: '1',
     source: full01,
     thumbnail: thumb01,
-    caption: 'Project 4 - SWANK',
-    description: 'HTML/CSS/Javascript/Mongoose/Express/React/Node',
-    github: 'https://github.com/rockyliwanag/SWANK',
-    site: 'https://swank.herokuapp.com',
+    caption: 'Project 1 - Blackjack',
+    description: 'HTML/CSS/Javascript',
+    github: 'https://github.com/rockyliwanag/Blackjack',
+    site: 'https://rockyliwanag.github.io/Blackjack/',
   },
   {
     id: '2',
     source: full02,
     thumbnail: thumb02,
-    caption: 'Project 3 - Mailman',
-    description: 'Python/Django/Postgresql',
-    github: 'https://github.com/RyanBranco/Mailman',
-    site: 'https://mail-man-app.herokuapp.com',
-  },
-  {
-    id: '3',
-    source: full03,
-    thumbnail: thumb03,
     caption: 'Project 2 - [bib.lio.file]',
     description: 'HTML/CSS/Javascript/Mongoose/Express.js/Node.js',
     github: 'https://github.com/rockyliwanag/bib-yo-file',
     site: 'https://bib-lio-file.herokuapp.com',
   },
   {
+    id: '3',
+    source: full03,
+    thumbnail: thumb03,
+    caption: 'Project 3 - Mailman',
+    description: 'Python/Django/Postgresql',
+    github: 'https://github.com/RyanBranco/Mailman',
+    site: 'https://mail-man-app.herokuapp.com',
+  },
+  {
     id: '4',
     source: full04,
     thumbnail: thumb04,
-    caption: 'Project 1 - Blackjack',
-    description: 'HTML/CSS/Javascript',
-    github: 'https://github.com/rockyliwanag/Blackjack',
-    site: 'https://rockyliwanag.github.io/Blackjack/',
+    caption: 'Project 4 - SWANK',
+    description: 'HTML/CSS/Javascript/Mongoose/Express/React/Node',
+    github: 'https://github.com/rockyliwanag/SWANK',
+    site: 'https://swank.herokuapp.com',
   },
 ]
 
@@ -68,7 +69,9 @@ const HomeIndex = () => {
               <span>Welcome to StudioRock.</span> <br />
               Please, poke around.
             </h2>
-            <div></div>
+            <div id="index-logo">
+              <img className="hero-logo" src={logo} alt="" />
+            </div>
           </header>
           <p>
             Thank you for taking the time to check out my site. This is the

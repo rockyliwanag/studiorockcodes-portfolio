@@ -20,13 +20,21 @@ export default () => {
           <p>
             I am Rocky , a graphic designer turned software developer. Like most
             creative developers, it was a natural progression to go from being a
-            graphic artist to learning how to code. I was born in the era of
-            NES, Powerglove, and playing Track n Field on a Power Pad. My first
-            exposure to pixels were on a MS-Paint program, pre Windows 95.
+            graphic artist to learning how to code. I have always had the
+            interest, and was an early adopter of technology. My era were in the
+            days of NES, Powerglove, and playing Track n Field on a Power Pad.
+            My first exposure to pixels were on an MS-Paint program, pre Windows
+            95 version.
             <br />
             <br />
-            Finishing a Bachelor's degree on Marketing/Advertising, I learned
-            how valuable design is.
+            Finishing a Bachelor's degree on Marketing/Advertising at APC,
+            Philippines; I learned how valuable design is. It has fascinated me
+            how effective a good design can get, targeted at the right audience.
+            And how local mom and pop brands break into becoming global brands.
+            <br />
+            <br />
+            Having these in mind, and building my technical skill set, my goal
+            is to create compelling designs and brands in the digital space.
           </p>
           <a href={downloadFile} download>
             Download Resume

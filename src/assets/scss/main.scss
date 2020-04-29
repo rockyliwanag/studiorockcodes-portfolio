@@ -260,6 +260,9 @@ header {
   }
 
   &.major {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     h2 {
       font-size: 2em;
     }
@@ -267,6 +270,9 @@ header {
       font-weight: 700;
       font-size: 1.4em;
       color: red;
+    }
+    #index-logo {
+      margin: 0 2rem;
     }
   }
 }
@@ -1075,6 +1081,10 @@ input[type='button'],
 .about {
   background-color: rgb(19, 19, 19);
   height: fit-content;
+}
+
+.hero-logo {
+  width: 90px;
 }
 
 /* Poptrox */

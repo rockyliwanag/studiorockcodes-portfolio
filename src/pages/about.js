@@ -3,7 +3,7 @@ import Helmet from 'react-helmet'
 // import { Link } from 'gatsby'
 import Layout from '../components/layout'
 import downloadFile from '../downloads/Rocky-Resume.pdf'
-import resume from '../assets/images/resume-image.jpg'
+import resume from '../assets/images/Rocky-Resume.jpg'
 
 export default () => {
   const siteTitle = 'StudioRock - Portfolio'

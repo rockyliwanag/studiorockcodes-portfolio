@@ -8,7 +8,7 @@ export default ({ data }) => {
     <Layout>
       <div className="main">
         <Link to="/portfolio">
-          <div className="icon fa-arrow-left">&nbsp;Back to Portfolio</div>
+          <div className="icon fa-arrow-left">&nbsp;Portfolio</div>
         </Link>
         <h1>{post.frontmatter.title}</h1>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />

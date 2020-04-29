@@ -73,7 +73,6 @@ export default () => {
                   <h3 className="icon fa-home">
                     <span className="label"> Address </span>
                   </h3>
-                  24253 Hazelnut Ave <br />
                   Murrieta, CA 92562 <br />
                   United States
                 </li>

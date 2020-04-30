@@ -1,11 +1,27 @@
 module.exports = {
   siteMetadata: {
     title: 'StudioRock - Portfolio',
-    author: 'Hunter Chang',
-    description: 'A Gatsby.js Starter based on Strata by HTML5 UP',
+    author: 'Rocky Liwanag',
+    description: 'A Portfolio for StudioRockCodes',
   },
   pathPrefix: '/studiorockcodes-portfolio',
   plugins: [
+    'gatsby-plugin-sharp',
+    'gatsby-transformer-sharp',
+    {
+      resolve: 'gatsby-transformer-remark',
+      options: {
+        plugins: [
+          {
+            resolve: 'gatsby-remark-images',
+            options: {
+              maxWidth: 800,
+            },
+          },
+        ],
+      },
+    },
+
     'gatsby-plugin-react-helmet',
     {
       resolve: `gatsby-plugin-manifest`,
@@ -25,7 +41,12 @@ module.exports = {
         path: `${__dirname}/src/`,
       },
     },
-    'gatsby-transformer-remark',
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/src/assets/images`,
+      },
+    },
     'gatsby-plugin-sass',
     'gatsby-plugin-offline',
   ],

@@ -69,13 +69,13 @@ const HomeIndex = () => {
       <div className="main">
         <section id="one">
           <header className="major">
+            <div id="index-logo">
+              <img className="hero-logo" src={logo} alt="" />
+            </div>
             <h2>
               <span>Welcome to StudioRock.</span> <br />
               Please, poke around.
             </h2>
-            <div id="index-logo">
-              <img className="hero-logo" src={logo} alt="" />
-            </div>
           </header>
           <p>
             Thank you for taking the time to check out my site. This is the

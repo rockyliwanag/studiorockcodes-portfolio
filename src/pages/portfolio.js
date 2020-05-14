@@ -30,8 +30,8 @@ export default () => {
     <article key={node.id}>
       <Link to={node.fields.slug}>
         <div id="project-entry">
-          <h3>{node.frontmatter.title}</h3>
-          <p>{node.frontmatter.date}</p>
+          {/* add image cover */} <h3> {node.frontmatter.title} </h3>
+          <p> {node.frontmatter.date} </p>
         </div>
       </Link>
     </article>
@@ -43,11 +43,14 @@ export default () => {
         <meta name="description" content={siteDescription} />
       </Helmet>
       <div className="main">
-        {/* <Link to="/">
-          <div className="icon fa-arrow-left">&nbsp;BACK</div>
-        </Link> */}
-        <h2> Portfolio Page! </h2> <p> This is a portfolio page. </p>
-        {projects}
+        <h2> Web Development Projects </h2>
+        <p> These are some of the projects I have developed. </p> {projects}
+        <h2> Web Design - UX/UI Projects </h2>
+        <p> These are some of the projects I have created. </p>
+        <h2> Logos Projects </h2>
+        <p> These are some of the projects I have created. </p>
+        <h2> Graphic Design Projects </h2>
+        <p> These are some of the projects I have created. </p>
         <Link to="/message"> Contact Me </Link>
       </div>
     </Layout>

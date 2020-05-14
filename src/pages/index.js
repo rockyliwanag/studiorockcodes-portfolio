@@ -73,11 +73,17 @@ const HomeIndex = () => {
               <img className="hero-logo" src={logo} alt="" />
             </div>
             <h2>
-              <span>Welcome to StudioRock.</span> <br />
+              Welcome to <span>StudioRock.</span> <br />
               Please, poke around.
             </h2>
           </header>
           <p>
+            I'm the creator of Studio Rock, Rolando “Rocky” Liwanag, a software
+            engineer, UX/UI and graphic artist. I've designed everything from
+            apparel to websites and continue to explore the intersection of
+            design and technology.
+            <br />
+            <br />
             Thank you for taking the time to check out my site. This is the
             initial version, but you can expect it to change and take form in
             time. I'm also continously working on all of my coding projects,
@@ -86,7 +92,7 @@ const HomeIndex = () => {
           <ul className="actions">
             <li>
               <Link to="/about" className="button">
-                Learn More
+                Read More
               </Link>
             </li>
           </ul>

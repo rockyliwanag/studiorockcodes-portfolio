@@ -14,26 +14,24 @@ export default () => {
         <title> {siteTitle} </title>
         <meta name="description" content={siteDescription} />
       </Helmet>
-      <div className="about">
+      <div className="alternate">
         <div className="main">
-          <h2> Hello again! </h2>{' '}
+          <h2> Hello again! </h2>
           <p>
-            I am Rocky , a graphic designer turned software developer. Like most
+            I am Rocky, a graphic designer turned software developer.Like most
             creative developers, it was a natural progression to go from being a
-            graphic artist to learning how to code. I have always had the
+            graphic artist to learning how to code.I have always had the
             interest, and was an early adopter of technology.
             {/*My era was in the
-            days of NES, Powerglove, and playing Track n Field on a Power Pad. */}
-            My first exposure to pixels were on an MS-Paint program, pre Windows
-            95 version.
+                  days of NES, Powerglove, and playing Track n Field on a Power Pad. */}
+            My first exposure to pixels were on an MS - Paint program, pre
+            Windows 95 version. <br />
             <br />
-            <br />
-            Finishing a Bachelor's degree in Marketing/Advertising at APC,
-            Philippines; I learned how valuable design is. It has always
+            Finishing a Bachelor 's degree in Marketing/Advertising at APC,
+            Philippines; I learned how valuable design is.It has always
             fascinated me how effective a good design can get, targeted at the
             right audience; And how local mom and pop brands break into becoming
-            global brands.
-            <br />
+            global brands. <br />
             <br />
             Having these in mind, and building my technical skillset, my goal is
             to create compelling designs and brands in the digital space.

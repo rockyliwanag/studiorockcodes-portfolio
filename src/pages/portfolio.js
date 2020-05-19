@@ -1,41 +1,16 @@
 import React from 'react'
 import Helmet from 'react-helmet'
-import { Link, graphql, useStaticQuery } from 'gatsby'
+import { Link } from 'gatsby'
 import Layout from '../components/layout'
+import Development from '../components/Development'
+import Designs from '../components/Designs'
+import Logos from '../components/Logos'
+import Webdesigns from '../components/Webdesigns'
 
 export default () => {
   const siteTitle = 'StudioRock - Portfolio'
   const siteDescription = 'Rocky Liwanag | Software Developer | Graphic Artist'
-  const { allMarkdownRemark } = useStaticQuery(
-    graphql`
-      query {
-        allMarkdownRemark(sort: { fields: frontmatter___date, order: ASC }) {
-          edges {
-            node {
-              fields {
-                slug
-              }
-              id
-              frontmatter {
-                title
-                date
-              }
-            }
-          }
-        }
-      }
-    `
-  )
-  const projects = allMarkdownRemark.edges.map(({ node }) => (
-    <article key={node.id}>
-      <Link to={node.fields.slug}>
-        <div id="project-entry">
-          {/* add image cover */} <h3> {node.frontmatter.title} </h3>
-          <p> {node.frontmatter.date} </p>
-        </div>
-      </Link>
-    </article>
-  ))
+
   return (
     <Layout>
       <Helmet>
@@ -44,13 +19,17 @@ export default () => {
       </Helmet>
       <div className="main">
         <h2> Web Development Projects </h2>
-        <p> These are some of the projects I have developed. </p> {projects}
+        <p> These are some of the projects I have developed. </p>
+        <Development />
         <h2> Web Design - UX/UI Projects </h2>
         <p> These are some of the projects I have created. </p>
-        <h2> Logos Projects </h2>
+        <Designs />
+        <h2> Logo Projects </h2>
         <p> These are some of the projects I have created. </p>
+        <Logos />
         <h2> Graphic Design Projects </h2>
         <p> These are some of the projects I have created. </p>
+        <Webdesigns />
         <Link to="/message"> Contact Me </Link>
       </div>
     </Layout>

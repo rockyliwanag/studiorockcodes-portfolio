@@ -1,7 +1,14 @@
 ---
 title: 'Project 4 - SWANK'
 date: '2020-04-20'
-featuredImage: ../assets/images/fulls/04.jpg
+featuredImage: '../../assets/images/fulls/04.jpg'
+posttype: 'portfolio'
+path: '/develop/project-4-swank'
+category: 'Develop'
+tags:
+  - 'app'
+  - 'iOS'
+  - 'Android'
 ---
 
 Fourth Project for General Assembly's Software Engineer Immersive course.
@@ -16,4 +23,3 @@ Fourth Project for General Assembly's Software Engineer Immersive course.
 - Mongoose
 - Express
 - React
-- Node

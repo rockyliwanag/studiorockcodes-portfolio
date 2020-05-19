@@ -1,7 +1,14 @@
 ---
 title: 'Project 1 - Blackjack'
 date: '2020-02-21'
-featuredImage: ../assets/images/fulls/01.jpg
+featuredImage: '../../assets/images/fulls/01.jpg'
+posttype: 'portfolio'
+path: '/project-1-blackjack'
+category: 'Develop'
+tags:
+  - 'app'
+  - 'iOS'
+  - 'Android'
 ---
 
 First Project for General Assembly's Software Engineer Immersive course.

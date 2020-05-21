@@ -21,9 +21,11 @@ Technologies used:
 - Database:
   - Postgresql
 
-Additional information on development: [Trello Board](https://trello.com/b/t7izR4F0/mailman-app) | [Wire frame / Pitch deck](https://docs.google.com/presentation/d/1lY9jwsaxmT8gTmNoaJnirnhIsBUqmHBgHC8d7zBj7tI/edit)
+Additional information on development:
 
-Check out the site [here](https://mail-man-app.herokuapp.com/)
+<a class="button" href="https://trello.com/b/t7izR4F0/mailman-app" target="_blank">_Trello_<a> <br/> <br/>
+<a class="button" href="https://docs.google.com/presentation/d/1lY9jwsaxmT8gTmNoaJnirnhIsBUqmHBgHC8d7zBj7tI/edit" target="_blank">_Pitch Deck_<a> <br/> <br/>
+<a class="button" href="https://mail-man-app.herokuapp.com" target="_blank">_Full Site_<a>
 
 Current features being worked on:
 (this is an ongoing project that our developers are working on)

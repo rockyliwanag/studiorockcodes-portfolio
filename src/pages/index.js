@@ -21,7 +21,7 @@ const DEFAULT_IMAGES = [
     caption: 'Project 1 - Blackjack',
     description: 'HTML/CSS/Javascript',
     github: 'https://github.com/rockyliwanag/Blackjack',
-    info: '/project-1-blackjack',
+    info: '/development/project-1/project-1-blackjack/',
     site: 'https://rockyliwanag.github.io/Blackjack/',
   },
   {
@@ -31,7 +31,7 @@ const DEFAULT_IMAGES = [
     caption: 'Project 2 - [bib.lio.file]',
     description: 'HTML/CSS/Javascript/Mongoose/Express.js/Node.js',
     github: 'https://github.com/rockyliwanag/bib-yo-file',
-    info: '/project-2-bibliofile',
+    info: '/development/project-2/project-2-bibliofile/',
     site: 'https://bib-lio-file.herokuapp.com',
   },
   {
@@ -41,7 +41,7 @@ const DEFAULT_IMAGES = [
     caption: 'Project 3 - Mailman',
     description: 'Python/Django/Postgresql',
     github: 'https://github.com/RyanBranco/Mailman',
-    info: '/project-3-mailman',
+    info: '/development/project-3/project-3-mailman/',
     site: 'https://mail-man-app.herokuapp.com',
   },
   {
@@ -51,7 +51,7 @@ const DEFAULT_IMAGES = [
     caption: 'Project 4 - SWANK',
     description: 'HTML/CSS/Javascript/Mongoose/Express/React/Node',
     github: 'https://github.com/rockyliwanag/SWANK',
-    info: '/project-4-swank',
+    info: '/development/project-4/project-4-swank/',
     site: 'https://swank.herokuapp.com',
   },
 ]
@@ -63,31 +63,31 @@ const HomeIndex = () => {
   return (
     <Layout>
       <Helmet>
-        <title> {siteTitle} </title>{' '}
-        <meta name="description" content={siteDescription} />{' '}
+        <title> {siteTitle} </title>
+        <meta name="description" content={siteDescription} />
       </Helmet>
       <div className="main">
         <section id="one">
           <header className="major">
             <div id="index-logo">
-              <img className="hero-logo" src={logo} alt="" />
+              <img className="hero-logo" src={logo} alt="Studio Rock Logo" />
             </div>
             <h2>
-              Welcome to <span>StudioRock.</span> <br />
+              Welcome to <span> StudioRock. </span> <br />
               Please, poke around.
             </h2>
           </header>
           <p>
-            I'm the creator of Studio Rock, Rolando “Rocky” Liwanag, a software
-            engineer, UX/UI and graphic artist. I've designed everything from
+            Welcome to Studio Rock Production, I'm Rocky Liwanag, a software
+            engineer, UX / UI and graphic artist. I've designed everything from
             apparel to websites and continue to explore the intersection of
-            design and technology.
+            design and technology. <br />
             <br />
-            <br />
-            Thank you for taking the time to check out my site. This is the
-            initial version, but you can expect it to change and take form in
-            time. I'm also continously working on all of my coding projects,
-            implementing icebox features.
+            Thank you for taking the time to check out my site. I used a Gatsby
+            starter and GraphQL to build this site. This is the initial version,
+            but you can expect it to change and take form in time.I 'm also
+            continously working on all of my coding projects, implementing
+            icebox features.
           </p>
           <ul className="actions">
             <li>
@@ -131,58 +131,58 @@ const HomeIndex = () => {
         <section id="three">
           <h2> Get In Touch </h2>
           <p>
-            Yes. Please keep in touch. You can send me a message, and I will
-            reply as promptly as possible. I would love to answer any question
-            you may have about my work. Have a blessed day!
+            Yes.Please keep in touch.You can send me a message, and I will reply
+            as promptly as possible.I would love to answer any question you may
+            have about my work.Have a blessed day!
           </p>
           <div className="row">
             <div className="8u 12u$(small)">
               {/* <form
-                method="POST"
-                name="contact"
-                data-netlify="true"
-                data-netlify-honeypot="bot-field"
-                action="/"
-              >
-                <div className="row uniform 50%">
-                  <div className="6u 12u$(xsmall)">
-                    <input type="hidden" name="bot-field" value="contact" />
-                    <input
-                      type="text"
-                      name="name"
-                      id="name"
-                      placeholder="Name"
-                    />
-                  </div>
-                  <div className="6u 12u$(xsmall)">
-                    <input
-                      type="email"
-                      name="email"
-                      id="email"
-                      placeholder="Email"
-                    />
-                  </div>
-                  <div className="12u">
-                    <textarea
-                      name="message"
-                      id="message"
-                      placeholder="Message"
-                      rows="4"
-                    ></textarea>
-                  </div>
-                </div>
-                <ul
-                  className="actions"
-                  style={{
-                    marginTop: 30,
-                  }}
-                >
-                  <li>
-                    <input type="submit" value="Send Message" />
-                  </li>
-                </ul>
-              </form>
-            </div> */}
+                      method="POST"
+                      name="contact"
+                      data-netlify="true"
+                      data-netlify-honeypot="bot-field"
+                      action="/"
+                    >
+                      <div className="row uniform 50%">
+                        <div className="6u 12u$(xsmall)">
+                          <input type="hidden" name="bot-field" value="contact" />
+                          <input
+                            type="text"
+                            name="name"
+                            id="name"
+                            placeholder="Name"
+                          />
+                        </div>
+                        <div className="6u 12u$(xsmall)">
+                          <input
+                            type="email"
+                            name="email"
+                            id="email"
+                            placeholder="Email"
+                          />
+                        </div>
+                        <div className="12u">
+                          <textarea
+                            name="message"
+                            id="message"
+                            placeholder="Message"
+                            rows="4"
+                          ></textarea>
+                        </div>
+                      </div>
+                      <ul
+                        className="actions"
+                        style={{
+                          marginTop: 30,
+                        }}
+                      >
+                        <li>
+                          <input type="submit" value="Send Message" />
+                        </li>
+                      </ul>
+                    </form>
+                  </div> */}
               {/* <div className="4u 12u$(small)"> */}
               <ul className="labeled-icons">
                 <li>

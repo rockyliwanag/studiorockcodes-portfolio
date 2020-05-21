@@ -8,13 +8,17 @@ export default ({ data }) => {
   let featuredImgFluid = post.frontmatter.featuredImage.childImageSharp.fluid
   return (
     <Layout>
-      <div className="main" key={post.id}>
-        <Link to="/portfolio">
-          <div className="icon fa-arrow-left">&nbsp;Portfolio</div>
-        </Link>
-        <h1>{post.frontmatter.title}</h1>
-        <Img fluid={featuredImgFluid} />
-        <div dangerouslySetInnerHTML={{ __html: post.html }} />
+      <div className="alternate" key={post.id}>
+        <div className="main">
+          <Link to="/portfolio">
+            <div className="icon fa-arrow-left">&nbsp;Portfolio</div>
+          </Link>
+          <h1>{post.frontmatter.title}</h1>
+          <Img fluid={featuredImgFluid} />
+          <br />
+          <br />
+          <div dangerouslySetInnerHTML={{ __html: post.html }} />
+        </div>
       </div>
     </Layout>
   )

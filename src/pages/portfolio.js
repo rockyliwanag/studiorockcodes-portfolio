@@ -1,41 +1,16 @@
 import React from 'react'
 import Helmet from 'react-helmet'
-import { Link, graphql, useStaticQuery } from 'gatsby'
+import { Link } from 'gatsby'
 import Layout from '../components/layout'
+import Development from '../components/Development'
+import Designs from '../components/Designs'
+import Logos from '../components/Logos'
+import Webdesigns from '../components/Webdesigns'
 
 export default () => {
   const siteTitle = 'StudioRock - Portfolio'
   const siteDescription = 'Rocky Liwanag | Software Developer | Graphic Artist'
-  const { allMarkdownRemark } = useStaticQuery(
-    graphql`
-      query {
-        allMarkdownRemark(sort: { fields: frontmatter___date, order: ASC }) {
-          edges {
-            node {
-              fields {
-                slug
-              }
-              id
-              frontmatter {
-                title
-                date
-              }
-            }
-          }
-        }
-      }
-    `
-  )
-  const projects = allMarkdownRemark.edges.map(({ node }) => (
-    <article key={node.id}>
-      <Link to={node.fields.slug}>
-        <div id="project-entry">
-          {/* add image cover */} <h3> {node.frontmatter.title} </h3>
-          <p> {node.frontmatter.date} </p>
-        </div>
-      </Link>
-    </article>
-  ))
+
   return (
     <Layout>
       <Helmet>
@@ -43,15 +18,37 @@ export default () => {
         <meta name="description" content={siteDescription} />
       </Helmet>
       <div className="main">
-        <h2> Web Development Projects </h2>
-        <p> These are some of the projects I have developed. </p> {projects}
-        <h2> Web Design - UX/UI Projects </h2>
-        <p> These are some of the projects I have created. </p>
-        <h2> Logos Projects </h2>
-        <p> These are some of the projects I have created. </p>
-        <h2> Graphic Design Projects </h2>
-        <p> These are some of the projects I have created. </p>
-        <Link to="/message"> Contact Me </Link>
+        <h1>My Portfolio</h1>
+        <section id="one">
+          <h2> Web Development Projects </h2>
+          <p>
+            {' '}
+            Here are some of the projects I have programmed myself. I wireframed
+            each with Sketch, then prototyped with InVision, I managed them with
+            Trello, wrote the code on VS Code, and then deployed on Heroku.{' '}
+          </p>
+          <Development />
+        </section>
+        <section id="two">
+          <h2> Web Design - UX/UI Projects </h2>
+          <p> These are some of the projects I have created. </p>
+          <Webdesigns />
+        </section>
+        <section id="three">
+          <h2> Logo Projects </h2>
+          <p> These are some of the projects I have created. </p>
+          <Logos />
+        </section>
+        <section id="four">
+          <h2> Graphic Design Projects </h2>
+          <p> These are some of the projects I have created. </p>
+          <Designs />
+        </section>
+        <hr />
+        <Link to="/message" className="button">
+          {' '}
+          Contact Me{' '}
+        </Link>
       </div>
     </Layout>
   )

@@ -48,11 +48,8 @@ Item Detail
 1. React
 1. Node
 
-[swank web app](https://swank.herokuapp.com) <br/>
-[Trello board](https://trello.com/h4vipuzi/swank)
-
-<br/>
-<br/>
+<a class="button" href="https://trello.com/h4vipuzi/swank" target="_blank">_Trello_<a> <br/> <br/>
+<a class="button" href="https://swank.herokuapp.com" target="_blank">_Full Site_<a>
 
 ## Next Steps/ICEBOX
 

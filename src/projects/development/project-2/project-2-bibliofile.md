@@ -34,8 +34,9 @@ Bib.Lio.File is a book club for bookworms. It allows visitors to view a collecti
 
 ## Getting Started
 
-Here is a Heroku link to the app and Trello board for my planning: [bib.lio.file](https://bib-lio-file.herokuapp.com/)
-[Trello](https://trello.com/b/q9IutHVu/project-2-book-club)
+Here is a Heroku link to the app and Trello board for my planning: <br/><br/>
+<a class="button" href="https://bib-lio-file.herokuapp.com" target="_blank">_Full Site_<a> <br/> <br/>
+<a class="button" href="https://trello.com/b/q9IutHVu/project-2-book-club" target="_blank">_Trello_<a>
 
 ## Next Steps (Icebox)
 

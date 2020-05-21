@@ -24,4 +24,4 @@ She had a tight budget, and wanted to use Wix. I used a Wix template for this de
 
 This is still an ongoing project, and we're in the middle of going through the design on what she would like to keep and change.
 
-[Check out the full site here](https://thewhitehomesc.com)
+<a class="button" href="https://thewhitehomesc.com" target="_blank">_Full Site_<a>

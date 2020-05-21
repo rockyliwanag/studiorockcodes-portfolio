@@ -21,7 +21,7 @@ const DEFAULT_IMAGES = [
     caption: 'Project 1 - Blackjack',
     description: 'HTML/CSS/Javascript',
     github: 'https://github.com/rockyliwanag/Blackjack',
-    info: '../projects/development/project-1-blackjack.md',
+    info: '/development/project-1/project-1-blackjack/',
     site: 'https://rockyliwanag.github.io/Blackjack/',
   },
   {
@@ -31,7 +31,7 @@ const DEFAULT_IMAGES = [
     caption: 'Project 2 - [bib.lio.file]',
     description: 'HTML/CSS/Javascript/Mongoose/Express.js/Node.js',
     github: 'https://github.com/rockyliwanag/bib-yo-file',
-    info: '../projects/development/project-2-bibliofile',
+    info: '/development/project-2/project-2-bibliofile/',
     site: 'https://bib-lio-file.herokuapp.com',
   },
   {
@@ -41,7 +41,7 @@ const DEFAULT_IMAGES = [
     caption: 'Project 3 - Mailman',
     description: 'Python/Django/Postgresql',
     github: 'https://github.com/RyanBranco/Mailman',
-    info: '../projects/development/project-3-mailman',
+    info: '/development/project-3/project-3-mailman/',
     site: 'https://mail-man-app.herokuapp.com',
   },
   {
@@ -51,7 +51,7 @@ const DEFAULT_IMAGES = [
     caption: 'Project 4 - SWANK',
     description: 'HTML/CSS/Javascript/Mongoose/Express/React/Node',
     github: 'https://github.com/rockyliwanag/SWANK',
-    info: '/development/project-4-swank',
+    info: '/development/project-4/project-4-swank/',
     site: 'https://swank.herokuapp.com',
   },
 ]
@@ -70,7 +70,7 @@ const HomeIndex = () => {
         <section id="one">
           <header className="major">
             <div id="index-logo">
-              <img className="hero-logo" src={logo} alt="" />
+              <img className="hero-logo" src={logo} alt="Studio Rock Logo" />
             </div>
             <h2>
               Welcome to <span> StudioRock. </span> <br />
@@ -78,15 +78,16 @@ const HomeIndex = () => {
             </h2>
           </header>
           <p>
-            I 'm the creator of Studio Rock, Rolando “Rocky” Liwanag, a software
-            engineer, UX / UI and graphic artist.I 've designed everything from
+            Welcome to Studio Rock Production, I'm Rocky Liwanag, a software
+            engineer, UX / UI and graphic artist. I've designed everything from
             apparel to websites and continue to explore the intersection of
             design and technology. <br />
             <br />
-            Thank you for taking the time to check out my site.This is the
-            initial version, but you can expect it to change and take form in
-            time.I 'm also continously working on all of my coding projects,
-            implementing icebox features.
+            Thank you for taking the time to check out my site. I used a Gatsby
+            starter and GraphQL to build this site. This is the initial version,
+            but you can expect it to change and take form in time.I 'm also
+            continously working on all of my coding projects, implementing
+            icebox features.
           </p>
           <ul className="actions">
             <li>

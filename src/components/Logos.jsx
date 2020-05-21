@@ -17,7 +17,7 @@ const Logos = () => {
               id
               frontmatter {
                 title
-                date
+                date(formatString: "DD MMMM, YYYY")
                 category
               }
             }
@@ -30,11 +30,16 @@ const Logos = () => {
   return allMarkdownRemark.edges.map(({ node }) => (
     <article key={node.id}>
       <Link to={node.fields.slug}>
-        <div id="project-entry">
-          {/* <img src={node.frontmatter.featuredImage} alt="" />{' '} */}
-          <h3> {node.frontmatter.title}</h3>
-          <p> {node.frontmatter.date} </p>
-        </div>
+        <ul>
+          <li>
+            <div id="project-entry">
+              {/* <Img fluid={node.frontmatter.childImageSharp.fluid} /> */}
+              {/* <img src={node.frontmatter.path} alt="" /> */}
+              <h3> {node.frontmatter.title} </h3>
+              <p> {node.frontmatter.date} </p>
+            </div>
+          </li>
+        </ul>
       </Link>
     </article>
   ))

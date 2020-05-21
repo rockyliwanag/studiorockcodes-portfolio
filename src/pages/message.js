@@ -14,8 +14,8 @@ export default () => {
       </Helmet>{' '}
       <div className="alternate">
         <div className="main">
-          <section className="three">
-            <h2> Get In Touch </h2>{' '}
+          <section className="full">
+            <h1> Get In Touch </h1>{' '}
             <p>
               Yes.Please keep in touch.You can send me a message, and I will
               reply as promptly as possible.I would love to answer any question

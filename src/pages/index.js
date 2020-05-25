@@ -83,11 +83,11 @@ const HomeIndex = () => {
             apparel to websites and continue to explore the intersection of
             design and technology. <br />
             <br />
-            Thank you for taking the time to check out my site. I used a Gatsby
-            starter and GraphQL to build this site. This is the initial version,
-            but you can expect it to change and take form in time.I 'm also
-            continously working on all of my coding projects, implementing
-            icebox features.
+            Thank you for taking the time to check out my portfolio. I created
+            my site using a Gatsby starter and GraphQL, deployed on a JAM stack
+            technology. This is the initial version of this site, and you can
+            expect it to change and take form in time. I'm also continously
+            working on all of my coding projects, implementing icebox features.
           </p>
           <ul className="actions">
             <li>
@@ -131,9 +131,9 @@ const HomeIndex = () => {
         <section id="three">
           <h2> Get In Touch </h2>
           <p>
-            Yes.Please keep in touch.You can send me a message, and I will reply
-            as promptly as possible.I would love to answer any question you may
-            have about my work.Have a blessed day!
+            Yes. Please keep in touch. You can send me a message, and I will
+            reply as promptly as possible. I would be glad to answer any
+            question/s you may have about my work. Have a wonderful joyous day!
           </p>
           <div className="row">
             <div className="8u 12u$(small)">

@@ -1335,7 +1335,7 @@ body.is-touch {
 
   /* Main */
 
-  #main {
+  .main {
     margin-left: $size-header-width;
     max-width: none;
     padding: ($size-header-pad * 2) $size-header-pad $size-header-pad $size-header-pad;
@@ -1425,7 +1425,7 @@ body.is-touch {
 
   /* Main */
 
-  #main {
+  .main {
     margin: 0;
     padding: ($size-header-pad * 1.5) $size-header-pad;
     width: 100%;
@@ -1500,7 +1500,7 @@ body.is-touch {
 
   /* Main */
 
-  #main {
+  .main {
     padding: ($size-header-pad * 1.5) $size-header-pad (($size-header-pad * 1.5) - _size(element-margin)) $size-header-pad;
 
     >section {

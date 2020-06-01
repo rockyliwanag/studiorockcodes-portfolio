@@ -3,7 +3,7 @@ title: 'Test Design Entry'
 date: '2020-02-21'
 posttype: 'portfolio'
 path: '/design/design-1-test'
-category: 'Logo'
+category: 'Draft'
 tags:
   - 'app'
   - 'iOS'

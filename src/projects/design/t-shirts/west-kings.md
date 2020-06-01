@@ -3,7 +3,7 @@ title: 'West Kings'
 date: '2020-05-04'
 posttype: 'portfolio'
 path: './01.jpg'
-category: 'Design'
+category: 'Draft'
 tags:
   - 'app'
   - 'iOS'

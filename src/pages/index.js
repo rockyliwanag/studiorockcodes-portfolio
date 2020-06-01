@@ -84,10 +84,11 @@ const HomeIndex = () => {
             design and technology. <br />
             <br />
             Thank you for taking the time to check out my portfolio. I created
-            my site using a Gatsby starter and GraphQL, deployed on a JAM stack
-            technology. This is the initial version of this site, and you can
-            expect it to change and take form in time. I'm also continously
-            working on all of my coding projects, implementing icebox features.
+            my site using a Gatsby starter, GraphQL, SASS framework, and
+            deployed on a JAM stack technology. This is the initial version of
+            this site, and you can expect it to change and take form in time.
+            I'm also continously working on all of my coding projects,
+            implementing icebox features.
           </p>
           <ul className="actions">
             <li>

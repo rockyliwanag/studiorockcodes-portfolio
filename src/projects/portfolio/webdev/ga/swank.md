@@ -1,11 +1,14 @@
 ---
-title: 'Project 4 - SWANK'
+title: 'SWANK'
 date: '2020-04-20'
 featuredImage: './04.jpg'
 src: '/04.jpg'
 posttype: 'portfolio'
 path: './04.jpg'
-category: 'Develop'
+category: 'webdev'
+page: 'Web Development'
+type: 'webdev'
+sequence: 'item-four'
 tags:
   - 'app'
   - 'iOS'
@@ -15,14 +18,15 @@ tags:
 swank:
 /swaNGk/ -<br/>
 display one's wealth, knowledge, or achievements in a way that is intended to impress others. <br/>
-_"he was swanking about, playing the dashing young master spy"_
+_"With the impression that his money makes him superior, he carries himself with swank and swagger."_
 <br/>
 <br/>
 Swank is a Social Inventory Management Application. It is social in a way that other people are able to see other user's inventory and also it ranks each users based on the net value of their total inventory. <br/>
 <br/>
 
 <!-- Homepage
-![Screenshot 1](https://i.imgur.com/j36oHp8.png)
+
+ ![Screenshot 1](https://i.imgur.com/j36oHp8.png)
 Login/Signup Page
 ![Screenshot 2](https://i.imgur.com/aGfaiBb.png)
 Logged In

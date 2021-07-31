@@ -1,0 +1,49 @@
+/* Card */
+.card-container {
+  border: 2px solid gray;
+  border-radius: 25px;
+  margin: 2rem;
+}
+
+.card-image {
+  border-top-left-radius: 23px;
+  border-top-right-radius: 23px;
+}
+
+section {
+  &#container-wrapper {
+    // border: blue solid 2px;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+  }
+  .category-container {
+    display: flex;
+    flex-direction: column;
+    height: 20rem;
+    width: 400px;
+    padding: 2rem;
+    margin: 3rem;
+    border: rgba(92, 92, 92, 0.698) solid 2px;
+    border-radius: 10%;
+
+    .category-icon-container {
+      width: 200px;
+      height: 200px;
+    }
+    .category-title {
+      width: 200px;
+    }
+  }
+}
+
+#item-one {
+  border: yellow 4px solid;
+}
+
+#categories {
+  //   background-color: blue;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: auto;
+}

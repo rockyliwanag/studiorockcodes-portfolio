@@ -1,11 +1,14 @@
 ---
-title: 'Project 2 - [bib.lio.file]'
+title: '[bib.lio.file]'
 date: '2020-03-13'
 featuredImage: './02.jpg'
 src: '/02.jpg'
 posttype: 'portfolio'
-path: '/develop/project-2-biliofile'
-category: 'Develop'
+path: '/portfolio/webdev/project-2-biliofile'
+category: 'webdev'
+page: 'Web Development'
+type: 'webdev'
+sequence: 'item-two'
 tags:
   - 'app'
   - 'iOS'

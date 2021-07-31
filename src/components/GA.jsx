@@ -2,7 +2,7 @@ import React from 'react'
 import { Link, graphql, useStaticQuery } from 'gatsby'
 import Img from 'gatsby-image'
 
-const Development = () => {
+const GA = () => {
   const { allMarkdownRemark } = useStaticQuery(
     graphql`
       query IndexQueryDevelop {
@@ -12,8 +12,8 @@ const Development = () => {
           }
         }
         allMarkdownRemark(
-          sort: { fields: [frontmatter___date], order: DESC }
-          filter: { frontmatter: { category: { eq: "Develop" } } }
+          sort: { fields: [frontmatter___date], order: ASC }
+          filter: { frontmatter: { category: { eq: "webdev" } } }
         ) {
           edges {
             node {
@@ -25,6 +25,7 @@ const Development = () => {
                 date(formatString: "DD MMMM, YYYY")
                 title
                 category
+                sequence
                 featuredImage {
                   childImageSharp {
                     fluid(maxWidth: 600) {
@@ -43,7 +44,7 @@ const Development = () => {
   return allMarkdownRemark.edges.map(({ node }) => (
     <article key={node.id}>
       <Link to={node.fields.slug}>
-        <div className="card-container">
+        <div className="card-container" id={node.frontmatter.sequence}>
           <Img
             className="card-image"
             fluid={node.frontmatter.featuredImage.childImageSharp.fluid}
@@ -58,4 +59,4 @@ const Development = () => {
   ))
 }
 
-export default Development
+export default GA

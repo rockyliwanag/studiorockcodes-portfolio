@@ -4,7 +4,7 @@ module.exports = {
     author: 'Rocky Liwanag',
     description: 'A Portfolio for StudioRockCodes',
   },
-  pathPrefix: '/studiorockcodes-portfolio',
+  pathPrefix: '',
   plugins: [
     'gatsby-plugin-react-helmet',
     {
@@ -34,12 +34,14 @@ module.exports = {
     {
       resolve: 'gatsby-transformer-remark',
       options: {
-        plugins: [{
-          resolve: 'gatsby-remark-images',
-          options: {
-            maxWidth: 800,
+        plugins: [
+          {
+            resolve: 'gatsby-remark-images',
+            options: {
+              maxWidth: 800,
+            },
           },
-        }, ],
+        ],
       },
     },
     'gatsby-plugin-sharp',

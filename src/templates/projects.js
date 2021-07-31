@@ -10,14 +10,19 @@ export default ({ data }) => {
     <Layout>
       <div className="alternate" key={post.id}>
         <div className="main">
-          <Link to="/portfolio">
-            <div className="icon fa-arrow-left">&nbsp;Portfolio</div>
+          <Link to={`/portfolio/${post.frontmatter.type}`}>
+            <div className="icon fa-arrow-left">
+              &nbsp;{`Portfolio / ${post.frontmatter.page}`}
+            </div>
           </Link>
           <h1>{post.frontmatter.title}</h1>
           <Img fluid={featuredImgFluid} />
           <br />
           <br />
-          <div dangerouslySetInnerHTML={{ __html: post.html }} />
+          <div
+            className="test"
+            dangerouslySetInnerHTML={{ __html: post.html }}
+          />
         </div>
       </div>
     </Layout>
@@ -30,6 +35,9 @@ export const query = graphql`
       html
       frontmatter {
         title
+        type
+        category
+        page
         featuredImage {
           childImageSharp {
             fluid(maxWidth: 800) {

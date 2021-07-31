@@ -42,8 +42,6 @@ export default () => {
               </a>
             </li>
           </ul>
-          {/* <br />
-          <br /> */}
           <div>
             <img src={resume} alt="" />
           </div>

@@ -1,11 +1,14 @@
 ---
-title: 'Project 3 - Mailman'
+title: 'Mailman'
 date: '2020-04-03'
 featuredImage: './03.jpg'
 src: '/03.jpg'
 posttype: 'portfolio'
-path: '/develop/project-3-mailman'
-category: 'Develop'
+path: '/portfolio/webdev/project-3-mailman'
+category: 'webdev'
+page: 'Web Development'
+sequence: 'item-three'
+type: 'webdev'
 tags:
   - 'app'
   - 'iOS'

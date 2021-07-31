@@ -1,11 +1,14 @@
 ---
-title: 'Project 1 - Blackjack'
+title: 'Blackjack'
 date: '2020-02-21'
 featuredImage: './01.jpg'
 src: '/01.jpg'
 posttype: 'portfolio'
-path: '../projects/development/project-1/01.jpg'
-category: 'Develop'
+path: '../projects/portfolio/webdev/project-1/01.jpg'
+category: 'webdev'
+sequence: 'item-one'
+page: 'Web Development'
+type: 'webdev'
 tags:
   - 'app'
   - 'iOS'

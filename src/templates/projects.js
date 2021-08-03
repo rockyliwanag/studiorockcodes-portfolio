@@ -20,7 +20,6 @@ export default ({ data }) => {
           <br />
           <br />
           <div
-            className="test"
             dangerouslySetInnerHTML={{ __html: post.html }}
           />
         </div>

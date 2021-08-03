@@ -4,7 +4,7 @@ import { Link } from 'gatsby'
 import PageTransition from 'gatsby-plugin-page-transitions'
 import Layout from '../../components/layout'
 import GA from '../../components/portfolio/GA'
-import Ecommerce from '../../components/portfolio/Ecommerce'
+import Logo from '../../components/portfolio/Logos'
 
 
 export default () => {
@@ -22,16 +22,16 @@ export default () => {
         <Link to="/portfolio">
           <div className="icon fa-arrow-left">&nbsp;Portfolio</div>
         </Link>
-        <h1>Web Development</h1>
+        <h1>Graphic Design</h1>
         <h4>Lorem ipsum dolor al cabron</h4>
         <section>
-          <h2>E-commerce</h2>
+          <h1>Logos</h1>
           <h6>
             These were projects that I made during my General Assembly's
             Software Engineering bootcamp.
           </h6>
           <div id="categories">
-            <Ecommerce />
+            <Logo />
           </div>
         </section>
         <section>

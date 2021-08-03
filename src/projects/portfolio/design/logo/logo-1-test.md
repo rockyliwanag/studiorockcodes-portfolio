@@ -1,9 +1,13 @@
 ---
 title: 'Test Design Entry'
 date: '2020-02-21'
+src: './01.jpg'
 posttype: 'portfolio'
 path: '/design/design-1-test'
-category: 'Draft'
+category: 'logo'
+page: 'Logo'
+type: 'design'
+sequence: 'item-six'
 tags:
   - 'app'
   - 'iOS'

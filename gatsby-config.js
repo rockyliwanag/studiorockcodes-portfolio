@@ -7,6 +7,13 @@ module.exports = {
   pathPrefix: '',
   plugins: [
     'gatsby-plugin-react-helmet',
+    // {
+    //   resolve: 'gatsby-plugin-page-transitions',
+    //   options: {
+    //     transitionTime: 500
+    //   }
+    // },
+    'gatsby-plugin-page-transitions',
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -44,6 +51,7 @@ module.exports = {
         ],
       },
     },
+    
     'gatsby-plugin-sharp',
     'gatsby-transformer-sharp',
     'gatsby-plugin-sass',

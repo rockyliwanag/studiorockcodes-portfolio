@@ -1,5 +1,6 @@
 import React from 'react'
 import Helmet from 'react-helmet'
+import PageTransition from 'gatsby-plugin-page-transitions'
 // import { Link } from 'gatsby'
 import Layout from '../components/layout'
 
@@ -8,6 +9,7 @@ export default () => {
   const siteDescription = 'Rocky Liwanag | Software Developer | Graphic Artist'
   return (
     <Layout>
+      <PageTransition>
       <Helmet>
         <title> {siteTitle} </title>{' '}
         <meta name="description" content={siteDescription} />{' '}
@@ -98,6 +100,7 @@ export default () => {
           </section>{' '}
         </div>{' '}
       </div>{' '}
+      </PageTransition>
     </Layout>
   )
 }

@@ -13,7 +13,7 @@ const Designs = () => {
         }
         allMarkdownRemark(
           sort: { fields: [frontmatter___date], order: DESC }
-          filter: { frontmatter: { category: { eq: "Design" } } }
+          filter: { frontmatter: { category: { eq: "logo" } } }
         ) {
           edges {
             node {

@@ -1,5 +1,6 @@
 import React from 'react'
 import Helmet from 'react-helmet'
+import PageTransition from 'gatsby-plugin-page-transitions'
 import full01 from '../assets/images/fulls/01.jpg'
 import full02 from '../assets/images/fulls/02.jpg'
 import full03 from '../assets/images/fulls/03.jpg'
@@ -62,6 +63,7 @@ const HomeIndex = () => {
 
   return (
     <Layout>
+      <PageTransition>
       <Helmet>
         <title> {siteTitle} </title>
         <meta name="description" content={siteDescription} />
@@ -132,7 +134,7 @@ const HomeIndex = () => {
         <section id="three">
           <h2> Get In Touch </h2>
           <p>
-            Yes. Please keep in touch. You can send me a message, and I will
+            Yes. Please get in touch. You can send me a message, and I will
             reply as promptly as possible. I would be glad to answer any
             question/s you may have about my work. Have a wonderful joyous day!
           </p>
@@ -212,6 +214,7 @@ const HomeIndex = () => {
           </div>
         </section>
       </div>
+    </PageTransition>
     </Layout>
   )
 }

@@ -52,9 +52,6 @@ Item Detail
 1. React
 1. Node
 
-<a class="button" href="https://trello.com/h4vipuzi/swank" target="_blank">_Trello_<a> <br/> <br/>
-<a class="button" href="https://swank.herokuapp.com" target="_blank">_Full Site_<a>
-
 ## Next Steps/ICEBOX
 
 - Logged in users see items they added

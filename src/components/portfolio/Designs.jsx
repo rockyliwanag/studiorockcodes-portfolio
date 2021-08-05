@@ -3,7 +3,7 @@ import { Link, graphql, useStaticQuery } from 'gatsby'
 import Img from 'gatsby-image'
 
 const Designs = () => {
-  const { allMarkdownRemark } = useStaticQuery(
+  const { allMdx } = useStaticQuery(
     graphql`
       query IndexQueryDesign {
         site {
@@ -11,7 +11,7 @@ const Designs = () => {
             title
           }
         }
-        allMarkdownRemark(
+        allMdx(
           sort: { fields: [frontmatter___date], order: DESC }
           filter: { frontmatter: { category: { eq: "logo" } } }
         ) {
@@ -40,7 +40,7 @@ const Designs = () => {
     `
   )
 
-  return allMarkdownRemark.edges.map(({ node }) => (
+  return allMdx.edges.map(({ node }) => (
     <article key={node.id}>
       <Link to={node.fields.slug}>
         <div className="card-container">

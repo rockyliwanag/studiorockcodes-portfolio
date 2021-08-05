@@ -1,10 +1,11 @@
 import React from 'react'
 import { graphql, Link } from 'gatsby'
+import { MDXRenderer } from 'gatsby-plugin-mdx'
 import Layout from '../components/layout'
 import Img from 'gatsby-image'
 
 export default ({ data }) => {
-  let post = data.markdownRemark
+  let post = data.mdx
   let featuredImgFluid = post.frontmatter.featuredImage.childImageSharp.fluid
   return (
     <Layout>
@@ -19,9 +20,7 @@ export default ({ data }) => {
           <Img fluid={featuredImgFluid} />
           <br />
           <br />
-          <div
-            dangerouslySetInnerHTML={{ __html: post.html }}
-          />
+          <MDXRenderer>{post.body}</MDXRenderer>
         </div>
       </div>
     </Layout>
@@ -30,8 +29,8 @@ export default ({ data }) => {
 
 export const query = graphql`
   query($slug: String!) {
-    markdownRemark(fields: { slug: { eq: $slug } }) {
-      html
+    mdx(fields: { slug: { eq: $slug } }) {
+      body
       frontmatter {
         title
         type

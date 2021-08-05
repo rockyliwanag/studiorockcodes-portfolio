@@ -52,15 +52,15 @@ const Logos = () => {
                 id, 
                 source, 
                 thumbnail, 
-                caption,
-                description
+                // caption,
+                // description
                 }) =>
                     // key=el.id,
                     ({id,
                    source:source.childImageSharp.fluid.src,
                     thumbnail:thumbnail.childImageSharp.fluid.src,
-                    caption,
-                    description
+                    // caption,
+                    // description
                     })
               )}/>
           

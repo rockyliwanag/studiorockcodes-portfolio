@@ -144,9 +144,10 @@ const HomeIndex = () => {
                       method="POST"
                       name="contact"
                       data-netlify="true"
-                      data-netlify-honeypot="bot-field"
                       action="/"
                     >
+                      <input type="hidden" name="bot-field" />
+<input type="hidden" name="form-name" value="contact" />
                       <div className="row uniform 50%">
                         <div className="6u 12u$(xsmall)">
                           <input type="hidden" name="bot-field" value="contact" />
@@ -161,14 +162,12 @@ const HomeIndex = () => {
                           <input
                             type="email"
                             name="email"
-                            id="email"
                             placeholder="Email"
                           />
                         </div>
                         <div className="12u">
                           <textarea
                             name="message"
-                            id="message"
                             placeholder="Message"
                             rows="4"
                           ></textarea>

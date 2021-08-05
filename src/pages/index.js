@@ -146,11 +146,10 @@ const HomeIndex = () => {
                       data-netlify="true"
                       action="/"
                     >
-                      <input type="hidden" name="bot-field" />
-<input type="hidden" name="form-name" value="contact" />
                       <div className="row uniform 50%">
                         <div className="6u 12u$(xsmall)">
-                          <input type="hidden" name="bot-field" value="contact" />
+                        <input type="hidden" name="bot-field" />
+                          <input type="hidden" name="contact" value="contact" />
                           <input
                             type="text"
                             name="name"

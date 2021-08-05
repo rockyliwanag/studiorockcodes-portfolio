@@ -1,13 +1,44 @@
 ---
 title: 'Test Design Entry'
 date: '2020-02-21'
-featuredImage: './01.jpg'
+featuredImage: './images/01.jpg'
 src: './01.jpg'
 posttype: 'portfolio'
 path: '/design/design-1-test'
 category: 'logo'
 page: 'Logo'
 type: 'design'
+images:
+  [
+    {
+      id: '1',
+      source: '../../../../assets/images/fulls/01.jpg',
+      thumbnail: '../../../../assets/images/thumbs/01.jpg',
+      caption: 'Project 1 - Blackjack',
+      description: 'HTML/CSS/Javascript',
+    },
+    {
+      id: '2',
+      source: '../../../../assets/images/fulls/02.jpg',
+      thumbnail: '../../../../assets/images/thumbs/02.jpg',
+      caption: 'Project 2 - [bib.lio.file]',
+      description: 'HTML/CSS/Javascript/Mongoose/Express.js/Node.js',
+    },
+    {
+      id: '3',
+      source: '../../../../assets/images/fulls/03.jpg',
+      thumbnail: '../../../../assets/images/thumbs/03.jpg',
+      caption: 'Project 3 - Mailman',
+      description: 'Python/Django/Postgresql',
+    },
+    {
+      id: '4',
+      source: '../../../../assets/images/fulls/04.jpg',
+      thumbnail: '../../../../assets/images/thumbs/04.jpg',
+      caption: 'Project 4 - SWANK',
+      description: 'HTML/CSS/Javascript/Mongoose/Express/React/Node',
+    },
+  ]
 sequence: 'item-six'
 tags:
   - 'app'
@@ -15,9 +46,13 @@ tags:
   - 'Android'
 ---
 
+import LogoGallery from '/src/components/galleries/LogoGallery'
+
 First Project for General Assembly's Software Engineer Immersive course.
 
 <!-- ![Blackjack Screenshot](../assets/images/fulls/01.jpg) -->
+
+<LogoGallery />
 
 ## Here are technologies used
 

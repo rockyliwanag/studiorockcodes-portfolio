@@ -29,10 +29,7 @@ const Gallery = ({ images }) => {
             <img src={obj.thumbnail} alt="" />
           </a>
           <h3> {obj.caption} </h3> <p> {obj.description} </p>
-          <Link to={obj.info}>More Info</Link> &nbsp; &nbsp; &nbsp; &nbsp;
-          <a href={obj.site} target="_blank" rel="noopener noreferrer">
-            Visit Site
-          </a>
+
         </article>
       )
     })

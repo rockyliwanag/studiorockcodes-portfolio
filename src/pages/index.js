@@ -144,7 +144,8 @@ const HomeIndex = () => {
                       method="POST"
                       name="contact"
                       data-netlify="true"
-                      action="/"
+                      onSubmit="submit"
+                      action='/'
                     >
                       <div className="row uniform 50%">
                         <div className="6u 12u$(xsmall)">

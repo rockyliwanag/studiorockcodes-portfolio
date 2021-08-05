@@ -2,7 +2,7 @@ import React from 'react';
 import { withPrefix } from 'gatsby';
 import '../assets/scss/main.scss';
 
-export default ({ src }) => {
+const Video = ({ src }) => {
     return (
         // <>
         <video
@@ -29,3 +29,5 @@ export default ({ src }) => {
         //</>
     )
 }
+
+export default Video;

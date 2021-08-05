@@ -2,7 +2,7 @@ import React from 'react'
 import { Link, graphql, useStaticQuery } from 'gatsby'
 import Img from 'gatsby-image'
 
-const GA = () => {
+const Ga = () => {
   const { allMdx } = useStaticQuery(
     graphql`
       query IndexQueryDevelop {
@@ -59,4 +59,4 @@ const GA = () => {
   ))
 }
 
-export default GA
+export default Ga

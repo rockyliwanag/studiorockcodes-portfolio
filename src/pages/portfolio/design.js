@@ -3,11 +3,11 @@ import Helmet from 'react-helmet'
 import { Link } from 'gatsby'
 import PageTransition from 'gatsby-plugin-page-transitions'
 import Layout from '../../components/layout'
-import GA from '../../components/portfolio/GA'
+import Ga from '../../components/portfolio/GA'
 import Logo from '../../components/portfolio/Logos'
 
 
-export default () => {
+const Design = () => {
   const siteTitle = 'StudioRock - Portfolio'
   const siteDescription = 'Rocky Liwanag | Software Developer | Graphic Artist'
 
@@ -41,7 +41,7 @@ export default () => {
             Software Engineering bootcamp.
           </h6>
           <div id="categories">
-            <GA />
+            <Ga />
           </div>
         </section>
 
@@ -54,3 +54,5 @@ export default () => {
     </Layout>
   )
 }
+
+export default Design;

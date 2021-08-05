@@ -5,7 +5,7 @@ import PageTransition from 'gatsby-plugin-page-transitions'
 import Layout from '../components/layout'
 import Video from '../components/video'
 
-export default () => {
+const Portfolio = () => {
   const siteTitle = 'StudioRock - Portfolio'
   const siteDescription = 'Rocky Liwanag | Software Developer | Graphic Artist'
   const categories = [
@@ -57,3 +57,5 @@ export default () => {
     </Layout>
   )
 }
+
+export default Portfolio;

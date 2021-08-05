@@ -4,7 +4,7 @@ import { MDXRenderer } from 'gatsby-plugin-mdx'
 import Layout from '../components/layout'
 import Img from 'gatsby-image'
 
-export default ({ data }) => {
+const Projects = ({ data }) => {
   let post = data.mdx
   let featuredImgFluid = post.frontmatter.featuredImage.childImageSharp.fluid
   return (
@@ -47,3 +47,5 @@ export const query = graphql`
     }
   }
 `
+
+export default Projects;

@@ -6,7 +6,7 @@ import Layout from '../components/layout'
 import downloadFile from '../downloads/Rocky-Resume.pdf'
 import resume from '../assets/images/Rocky-Resume.jpg'
 
-export default () => {
+const About = () => {
   const siteTitle = 'StudioRock - Portfolio'
   const siteDescription = 'Rocky Liwanag | Software Developer | Graphic Artist'
   return (
@@ -53,3 +53,5 @@ export default () => {
     </Layout>
   )
 }
+
+export default About;

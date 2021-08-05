@@ -142,15 +142,15 @@ const HomeIndex = () => {
             <div className="8u 12u$(small)">
               <form
                       method="POST"
-                      name="contact"
+                      name="contact v1"
                       data-netlify="true"
                       onSubmit="submit"
                       action='/'
                     >
+                      {/* <input type="hidden" name="bot-field" /> */}
+                      <input type="hidden" name="form-name" value="contact v1" />
                       <div className="row uniform 50%">
                         <div className="6u 12u$(xsmall)">
-                        <input type="hidden" name="bot-field" />
-                          <input type="hidden" name="contact" value="contact" />
                           <input
                             type="text"
                             name="name"

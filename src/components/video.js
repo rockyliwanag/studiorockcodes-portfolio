@@ -11,14 +11,13 @@ export default ({ src }) => {
             muted
             loop
             playsInline
+            preload
             style={{
                 position: 'fixed',
-                // height: '500px',
-                // width: '300px',
                 zIndex: '-1',
                 objectFit:'cover',
                 objectPosition: 'center top',
-                border: '1px solid rgba(80, 80, 80, 0.452)',
+                border: '1.5px solid rgba(80, 80, 80, 0.452)',
                 borderRadius: '30px'
             }}
             src={withPrefix(src)}

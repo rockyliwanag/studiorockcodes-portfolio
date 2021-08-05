@@ -22,7 +22,7 @@ const DEFAULT_IMAGES = [
     caption: 'Project 1 - Blackjack',
     description: 'HTML/CSS/Javascript',
     github: 'https://github.com/rockyliwanag/Blackjack',
-    info: '/development/project-1/project-1-blackjack/',
+    info: '/portfolio/webdev/ga/blackjack/',
     site: 'https://rockyliwanag.github.io/Blackjack/',
   },
   {
@@ -32,7 +32,7 @@ const DEFAULT_IMAGES = [
     caption: 'Project 2 - [bib.lio.file]',
     description: 'HTML/CSS/Javascript/Mongoose/Express.js/Node.js',
     github: 'https://github.com/rockyliwanag/bib-yo-file',
-    info: '/development/project-2/project-2-bibliofile/',
+    info: '/portfolio/webdev/ga/bibliofile/',
     site: 'https://bib-lio-file.herokuapp.com',
   },
   {
@@ -42,7 +42,7 @@ const DEFAULT_IMAGES = [
     caption: 'Project 3 - Mailman',
     description: 'Python/Django/Postgresql',
     github: 'https://github.com/RyanBranco/Mailman',
-    info: '/development/project-3/project-3-mailman/',
+    info: '/portfolio/webdev/ga/mailman/',
     site: 'https://mail-man-app.herokuapp.com',
   },
   {
@@ -52,7 +52,7 @@ const DEFAULT_IMAGES = [
     caption: 'Project 4 - SWANK',
     description: 'HTML/CSS/Javascript/Mongoose/Express/React/Node',
     github: 'https://github.com/rockyliwanag/SWANK',
-    info: '/development/project-4/project-4-swank/',
+    info: '/portfolio/webdev/ga/swank/',
     site: 'https://swank.herokuapp.com',
   },
 ]
@@ -140,11 +140,11 @@ const HomeIndex = () => {
           </p>
           <div className="row">
             <div className="8u 12u$(small)">
-              {/* <form
+              <form
                       method="POST"
                       name="contact"
                       data-netlify="true"
-                      data-netlify-honeypot="bot-field"
+                      // data-netlify-honeypot="bot-field"
                       action="/"
                     >
                       <div className="row uniform 50%">
@@ -185,8 +185,8 @@ const HomeIndex = () => {
                         </li>
                       </ul>
                     </form>
-                  </div> */}
-              {/* <div className="4u 12u$(small)"> */}
+                  </div>
+              <div className="4u 12u$(small)">
               <ul className="labeled-icons">
                 <li>
                   <h3 className="icon fa-home">

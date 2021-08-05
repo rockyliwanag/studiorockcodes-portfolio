@@ -145,9 +145,8 @@ const HomeIndex = () => {
                       name="contact v1"
                       data-netlify="true"
                       onSubmit="submit"
-                      action='/'
                     >
-                      {/* <input type="hidden" name="bot-field" /> */}
+                      <input type="hidden" name="bot-field" />
                       <input type="hidden" name="form-name" value="contact v1" />
                       <div className="row uniform 50%">
                         <div className="6u 12u$(xsmall)">

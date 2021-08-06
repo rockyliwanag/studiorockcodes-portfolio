@@ -16,7 +16,6 @@ const About = () => {
         <title> {siteTitle} </title>
         <meta name="description" content={siteDescription} />
       </Helmet>
-      <div className="alternate">
         <div className="main">
           <h1 className="heading1"> More About Myself </h1>
           <p>
@@ -48,7 +47,6 @@ const About = () => {
             <img src={resume} alt="" />
           </div>
         </div>
-      </div>
       </PageTransition>
     </Layout>
   )

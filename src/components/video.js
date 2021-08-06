@@ -13,7 +13,7 @@ const Video = ({ src }) => {
             playsInline
             preload
             style={{
-                position: 'fixed',
+                position: 'absolute',
                 zIndex: '-1',
                 objectFit:'cover',
                 objectPosition: 'center top',

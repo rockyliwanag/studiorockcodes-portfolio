@@ -1244,9 +1244,15 @@ input[type='button'],
   }
 }
 
-video#demo {
+video#category {
   width: 300px;
   height: 500px;
+  object-fit: cover;
+  object-position: center top;
+  z-index: -1;
+  position: absolute;
+  border: 1.5px solid rgba(80, 80, 80, 0.555);
+  border-radius: 1.5em;
 }
 
 .alternate {
@@ -1457,7 +1463,7 @@ body.is-touch {
     font-size: 12pt;
   }
 
-  video#demo {
+  video#category {
     width: 250px;
     height: 450px;
   }
@@ -1513,7 +1519,7 @@ body.is-touch {
     width: calc(100% - #{$size-header-width});
   }
 
-  video#demo {
+  video#category {
     width: 200px;
     height: 400px;
   }

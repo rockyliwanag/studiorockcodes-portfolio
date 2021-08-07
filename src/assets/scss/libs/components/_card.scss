@@ -18,11 +18,12 @@ video {
 
 section {
   &#container-wrapper {
-    padding-top: 5em;
+    margin-top: 0;
+    height: 70vh;
     display: grid;
     grid-template-columns: 33% 33% 33%;
     grid-column-gap: 1em;
-    // position: absolute;
+    // background-color: rgba(127, 255, 212, 0.493);
   }
 
   // .category-container {
@@ -31,18 +32,11 @@ section {
   .video-overlay {
     height: 500px;
     width: 300px;
-    border-radius: 28px;
+    border-radius: 1.5em;
     position: absolute;
-    // top: 0px;
-    // left: 0px;
     z-index: -1;
-    background: rgb(18, 19, 18);
-    opacity: 0.4;
+    background: rgba(18, 19, 18, 0.383);
   }
-  //   .category-icon-container {
-  //     // width: 200px;
-  //     height: 100%;
-  //   }
   a {
     border-bottom: 0;
     .category-title {
@@ -56,6 +50,36 @@ section {
     }
   }
 }
+
+div.category-container:hover,
+div.category-container:focus {
+  // border: 2px solid blue;
+  // animation-name: catHover;
+  // animation-duration: 1s;
+  // animation-direction: normal;
+  // animation-timing-function: ease-in-out;
+
+  box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+  transform: translateY(-0.5em);
+}
+
+div.category-container:focus {
+  filter: grayscale(0);
+  -webkit-filter: grayscale(0);
+  filter: grayscale(0);
+}
+
+// @keyframes catHover {
+//   0% {
+//     transform: translateY(0);
+//   }
+//   100% {
+//     transform: translateY(-0.5em);
+//   }
+//   // 80% {
+//   //   transform: translateY(0);
+//   // }
+// }
 
 #categories {
   //   background-color: blue;

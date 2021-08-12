@@ -44,8 +44,8 @@ const Portfolio = () => {
         <p>I have categorized my portfolio to 3 of the services I can provide, based on my skillset. Web Development, Graphic Design, and Content Creation. A blend of the 3 can culminate into 1 quality application. </p>
         <section id="container-wrapper">
           {categories.map((c) => (
-            <div className="category-container">
-              <Link to={c.link} key={c.id}>
+            <div className="category-container" key={c.id}>
+              <Link to={c.link} >
                   <Video src={c.background} />
                 <div className="category-title">{c.name}</div>
                 

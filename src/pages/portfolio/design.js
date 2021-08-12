@@ -4,7 +4,7 @@ import { Link } from 'gatsby'
 import PageTransition from 'gatsby-plugin-page-transitions'
 import Layout from '../../components/layout'
 import Logo from '../../components/portfolio/Logos'
-import Ecommerce from '../../components/portfolio/Ecommerce'
+import Designs from '../../components/portfolio/Designs'
 import Animations from '../../components/portfolio/Animations'
 
 
@@ -32,7 +32,7 @@ const Design = () => {
             Software Engineering bootcamp.
           </p>
           <div id="categories">
-            <Animations />
+            <Logo />
           </div>
         </section>
         <section>
@@ -41,7 +41,7 @@ const Design = () => {
             Here are some example of animations using css and svg.
           </p>
           <div id="categories">
-            <Logo />
+            <Animations />
           </div>
         </section>
         <section>
@@ -50,7 +50,7 @@ const Design = () => {
             Here are some T-shirt designs that I get commissioned from West Kings clothing.
           </p>
           <div id="categories">
-            <Ecommerce />
+            <Designs />
           </div>
         </section>
 

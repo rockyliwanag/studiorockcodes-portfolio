@@ -11,6 +11,7 @@ import thumb03 from '../assets/images/thumbs/03.jpg'
 import thumb04 from '../assets/images/thumbs/04.jpg'
 import logo from '../assets/images/website-icon.png'
 import Gallery from '../components/Gallery'
+import Shirts from '../components/galleries/ShirtGallery'
 import Layout from '../components/layout'
 import { Link } from 'gatsby'
 
@@ -102,6 +103,7 @@ const HomeIndex = () => {
         </section>
         <section id="two">
           <h2> Recent Work </h2>
+          <Shirts />
           <Gallery
             images={DEFAULT_IMAGES.map(
               ({

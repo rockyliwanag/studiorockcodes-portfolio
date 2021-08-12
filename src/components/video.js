@@ -11,7 +11,7 @@ const Video = ({ src }) => {
             muted
             loop
             playsInline
-            preload
+            preload="true"
             src={withPrefix(src)}
         >
             <source src={withPrefix(src)} type="video/mp4" />

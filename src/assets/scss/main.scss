@@ -1048,7 +1048,6 @@ input[type='button'],
   .inner {
     height: 40px;
     font: normal 20px/40px Montserrat, sans-serif;
-    // border: blue 2px solid;
     h1,
     span,
     strong {
@@ -1068,7 +1067,7 @@ input[type='button'],
         h1 {
           display: inline-block;
           position: relative;
-          // white-space: nowrap;
+          white-space: nowrap;
           text-align: left;
           top: 0;
           left: 0;
@@ -1107,12 +1106,6 @@ input[type='button'],
           100% {
             top: -80px;
           }
-          // 100% {
-          //   top: -120px;
-          // }
-          // 100% {
-          //   top: -160px;
-          // }
         }
 
         @-webkit-keyframes move {
@@ -1242,6 +1235,14 @@ input[type='button'],
       padding-top: 0;
     }
   }
+
+  // > div {
+  //   img,
+  //   .resume {
+  //     border: 3px solid black;
+  //     width: 30rem;
+  //   }
+  // }
 }
 
 video#category {

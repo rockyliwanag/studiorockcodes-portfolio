@@ -63,9 +63,6 @@ const Logos = () => {
                     // description
                     })
               )}/>
-          
-            
-    
         </div>
     </article>
   ))

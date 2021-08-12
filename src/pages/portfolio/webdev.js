@@ -23,23 +23,23 @@ const Webdev = () => {
           <div className="icon fa-arrow-left">&nbsp;Portfolio</div>
         </Link>
         <h1>Web Development</h1>
-        <h4>Lorem ipsum dolor al cabron</h4>
+        <p>Listed below are professional and personal projects I have 'made || worked' on. Other than design, web development is where I focus most of my time and attention to.</p>
         <section>
           <h2>E-commerce</h2>
-          <h6>
+          <p>
             These were projects that I made during my General Assembly's
             Software Engineering bootcamp.
-          </h6>
+          </p>
           <div id="categories">
             <Ecommerce />
           </div>
         </section>
         <section>
           <h2>General Assembly Bootcamp Projects</h2>
-          <h6>
+          <p>
             These were projects that I made during my General Assembly's
             Software Engineering bootcamp.
-          </h6>
+          </p>
           <div id="categories">
             <Ga />
           </div>

@@ -47,7 +47,6 @@ const Portfolio = () => {
             <div className="category-container">
               <Link to={c.link} key={c.id}>
                   <Video src={c.background} />
-                  {/* <div className="video-overlay"></div> */}
                 <div className="category-title">{c.name}</div>
                 
               </Link>

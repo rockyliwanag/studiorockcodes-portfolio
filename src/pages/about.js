@@ -1,7 +1,6 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 import PageTransition from 'gatsby-plugin-page-transitions'
-// import { Link } from 'gatsby'
 import Layout from '../components/layout'
 import downloadFile from '../downloads/Rocky-Resume.pdf'
 import resume from '../assets/images/Rocky-Resume.jpg'
@@ -43,9 +42,9 @@ const About = () => {
               </a>
             </li>
           </ul>
-          <div>
-            <img src={resume} alt="" />
-          </div>
+          {/* <div>
+            <img className='resume'src={resume} alt="Resume Image" />
+          </div> */}
         </div>
       </PageTransition>
     </Layout>

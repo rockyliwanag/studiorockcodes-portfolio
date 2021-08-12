@@ -25,6 +25,13 @@ const Logos = () => {
                 date(formatString: "DD MMMM, YYYY")
                 title
                 category
+                logo {
+                  childImageSharp {
+                    fluid(maxWidth: 600) {
+                      ...GatsbyImageSharpFluid
+                    }
+                  }
+                }
                 featuredImage {
                   childImageSharp {
                     fluid(maxWidth: 600) {
@@ -43,14 +50,13 @@ const Logos = () => {
   return allMdx.edges.map(({ node }) => (
     <article key={node.id}>
       <Link to={node.fields.slug}>
-        <div className="card-container">
+        <div className='category-icon'>
           <Img
             className="card-image"
-            fluid={node.frontmatter.featuredImage.childImageSharp.fluid}
+            fluid={node.frontmatter.logo.childImageSharp.fluid}
           />
-          <div id="project-entry">
+          <div className='title'>
             <h3> {node.frontmatter.title} </h3>
-            <p> {node.frontmatter.date} </p>
           </div>
         </div>
       </Link>

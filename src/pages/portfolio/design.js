@@ -3,8 +3,9 @@ import Helmet from 'react-helmet'
 import { Link } from 'gatsby'
 import PageTransition from 'gatsby-plugin-page-transitions'
 import Layout from '../../components/layout'
-import Ga from '../../components/portfolio/GA'
 import Logo from '../../components/portfolio/Logos'
+import Ecommerce from '../../components/portfolio/Ecommerce'
+import Animations from '../../components/portfolio/Animations'
 
 
 const Design = () => {
@@ -25,23 +26,31 @@ const Design = () => {
         <h1>Graphic Design</h1>
         <h4>Lorem ipsum dolor al cabron</h4>
         <section>
-          <h1>Logos</h1>
-          <h6>
+          <h2>Logos</h2>
+          <p>
             These were projects that I made during my General Assembly's
             Software Engineering bootcamp.
-          </h6>
+          </p>
+          <div id="categories">
+            <Animations />
+          </div>
+        </section>
+        <section>
+          <h2>Animations</h2>
+          <p>
+            Here are some example of animations using css and svg.
+          </p>
           <div id="categories">
             <Logo />
           </div>
         </section>
         <section>
-          <h2>General Assembly Bootcamp Projects</h2>
-          <h6>
-            These were projects that I made during my General Assembly's
-            Software Engineering bootcamp.
-          </h6>
+          <h2>Shirt Designs</h2>
+          <p>
+            Here are some T-shirt designs that I get commissioned from West Kings clothing.
+          </p>
           <div id="categories">
-            <Ga />
+            <Ecommerce />
           </div>
         </section>
 

@@ -11,21 +11,21 @@ const Message = () => {
     <Layout>
       <PageTransition>
       <Helmet>
-        <title> {siteTitle} </title>{' '}
-        <meta name="description" content={siteDescription} />{' '}
-      </Helmet>{' '}
+        <title> {siteTitle} </title>
+        <meta name="description" content={siteDescription} />
+      </Helmet>
       <div className="alternate">
         <div className="main">
           <section className="full">
-            <h1> Get In Touch </h1>{' '}
+            <h1> Get In Touch </h1>
             <p>
               Yes.Please keep in touch.You can send me a message, and I will
               reply as promptly as possible.I would love to answer any question
               you may have about my work.Have a blessed day!
-            </p>{' '}
+            </p>
             <div className="row">
               <div className="8u 12u$(small)">
-                {' '}
+                
                 <form
                       method="POST"
                       name="contact v1"
@@ -74,31 +74,31 @@ const Message = () => {
                 <ul className="labeled-icons">
                   <li>
                     <h3 className="icon fa-home">
-                      <span className="label"> Address </span>{' '}
+                      <span className="label"> Address </span>
                     </h3>
                     Murrieta, CA 92562 <br />
-                    United States{' '}
-                  </li>{' '}
+                    United States
+                  </li>
                   <li>
                     <h3 className="icon fa-mobile">
-                      <span className="label"> Phone </span>{' '}
+                      <span className="label"> Phone </span>
                     </h3>
-                    562 - 208 - 3126{' '}
-                  </li>{' '}
+                    562 - 208 - 3126
+                  </li>
                   <li>
                     <h3 className="icon fa-envelope-o">
-                      <span className="label"> Email </span>{' '}
-                    </h3>{' '}
+                      <span className="label"> Email </span>
+                    </h3>
                     <a href="mailto:rocky.liwanag@outlook.com?Subject=Portfolio%20message">
-                      rocky.liwanag @outlook.com{' '}
-                    </a>{' '}
-                  </li>{' '}
-                </ul>{' '}
-              </div>{' '}
-            </div>{' '}
-          </section>{' '}
-        </div>{' '}
-      </div>{' '}
+                      rocky.liwanag @outlook.com
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
       </PageTransition>
     </Layout>
   )

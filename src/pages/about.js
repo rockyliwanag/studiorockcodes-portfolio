@@ -3,7 +3,6 @@ import Helmet from 'react-helmet'
 import PageTransition from 'gatsby-plugin-page-transitions'
 import Layout from '../components/layout'
 import downloadFile from '../downloads/Rocky-Resume.pdf'
-import resume from '../assets/images/Rocky-Resume.jpg'
 
 const About = () => {
   const siteTitle = 'StudioRock - Portfolio'
@@ -42,9 +41,6 @@ const About = () => {
               </a>
             </li>
           </ul>
-          {/* <div>
-            <img className='resume'src={resume} alt="Resume Image" />
-          </div> */}
         </div>
       </PageTransition>
     </Layout>

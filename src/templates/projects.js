@@ -24,7 +24,7 @@ const Projects = ({ data }) => {
 
           <div>
             <Carousel infiniteLoop autoPlay interval='5000' showThumbs={false}>
-            {images.map(({id, source, caption}) => (
+            {images.map(({id, source}) => (
                 <div key={id}>
                   <GatsbyImage image={source.childImageSharp.gatsbyImageData} alt="" />
                 </div>
@@ -54,7 +54,7 @@ export const query = graphql`query ($slug: String!) {
           gatsbyImageData(width: 800, layout: CONSTRAINED)
         }
       }
-      images {
+      carousel {
         id
         source {
           childImageSharp {

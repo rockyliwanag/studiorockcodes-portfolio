@@ -105,3 +105,13 @@ div.category-container:focus {
 //   border: '1px solid rgba(80, 80, 80, 0.452)';
 //   border-radius: '30px';
 // }
+
+.gallery-row {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  justify-items: stretch;
+  grid-gap: 0.4em;
+  .tile-item {
+    justify-self: stretch;
+  }
+}

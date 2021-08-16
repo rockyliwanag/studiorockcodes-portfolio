@@ -1,0 +1,60 @@
+import React from 'react'
+import { graphql, useStaticQuery } from 'gatsby'
+import Gallery from '../Gallery'
+
+
+const Ah = () => {
+  const { allMdx } = useStaticQuery(
+    graphql`query IndexQueryAhGallery {
+  allMdx(filter: {frontmatter: {category: {eq: "ecommerce"}, title: {eq: "Addendum Hair"}}}) {
+    edges {
+      node {
+        id
+        fields {
+          slug
+        }
+        frontmatter {
+          title
+          date
+          category
+          images {
+            id
+            source {
+              childImageSharp {
+                gatsbyImageData(width: 600, layout: CONSTRAINED)
+              }
+            }
+            thumbnail {
+              childImageSharp {
+                gatsbyImageData(width: 300, layout: CONSTRAINED)
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+`
+  )
+  
+  
+  return allMdx.edges.map(({ node }) => (
+    <article key={node.id}>
+      <Gallery images ={
+        node.frontmatter.images.map(({
+          id,
+          source,
+          thumbnail
+        }) => ({
+          id,
+          source: source.childImageSharp.gatsbyImageData.images.fallback.src,
+          thumbnail: thumbnail.childImageSharp.gatsbyImageData.images.fallback.src
+        }))
+      } />
+    </article>
+  ));
+}
+
+export default Ah

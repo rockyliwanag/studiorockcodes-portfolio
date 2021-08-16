@@ -17,7 +17,7 @@ const Gallery = ({ images }) => {
 
     const gallery = images.map((obj, i) => {
       return (
-        <article className="6u 12u$(xsmall) work-item" key={i}>
+        <article className="tile-item" key={i}>
           <a
             className="image fit thumb"
             href={obj.source}
@@ -42,7 +42,7 @@ const Gallery = ({ images }) => {
     })
     
 
-    return <div className="row"> {gallery} </div>
+    return <div className="gallery-row"> {gallery} </div>
   }
   return (
     <div>

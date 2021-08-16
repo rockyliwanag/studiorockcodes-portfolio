@@ -39,8 +39,8 @@ const Shirts = () => {
   )
   
   
-  return allMdx.edges.map(({ node }) => (
-    <article key={node.id}>
+  return allMdx.edges.map(({ node }, i) => (
+    <article key={i}>
       <Gallery images ={
         node.frontmatter.images.map(({
           id,

@@ -9,7 +9,7 @@ import { GatsbyImage } from "gatsby-plugin-image";
 const Projects = ({ data }) => {
   let post = data.mdx
   let featuredImgFluid = post.frontmatter.featuredImage.childImageSharp.gatsbyImageData
-  let images = post.frontmatter.images
+  let images = post.frontmatter.carousel
   return (
     <Layout>
         <div className="main" key={post.id}>
@@ -19,7 +19,6 @@ const Projects = ({ data }) => {
             </div>
           </Link>
           <h1>{post.frontmatter.title}</h1>
-          
           { !images ? <GatsbyImage image={featuredImgFluid} alt="" /> : 
 
           <div>

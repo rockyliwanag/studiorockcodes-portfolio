@@ -21,12 +21,12 @@ const Ah = () => {
             id
             source {
               childImageSharp {
-                gatsbyImageData(width: 600, layout: CONSTRAINED)
+                gatsbyImageData(placeholder: BLURRED, layout: FULL_WIDTH)
               }
             }
             thumbnail {
               childImageSharp {
-                gatsbyImageData(width: 300, layout: CONSTRAINED)
+                gatsbyImageData(width: 300, placeholder: BLURRED, layout: CONSTRAINED)
               }
             }
           }

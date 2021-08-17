@@ -4,6 +4,7 @@ node_modules
 yarn-error.log
 package-lock.json
 yarn.lock
+/src/pages/draft.js
 
 # Build directory
 /public

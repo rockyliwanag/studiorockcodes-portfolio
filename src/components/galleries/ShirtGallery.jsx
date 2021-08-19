@@ -48,8 +48,8 @@ const Shirts = () => {
           thumbnail
         }) => ({
           id,
-          source: source.childImageSharp.gatsbyImageData,
-          thumbnail: thumbnail.childImageSharp.gatsbyImageData
+          source: source.childImageSharp.gatsbyImageData.images.fallback.src,
+          thumbnail: thumbnail.childImageSharp.gatsbyImageData.images.fallback.src
         }))
       } />
     </article>

@@ -9,11 +9,11 @@ import thumb01 from '../assets/images/thumbs/01.jpg'
 import thumb02 from '../assets/images/thumbs/02.jpg'
 import thumb03 from '../assets/images/thumbs/03.jpg'
 import thumb04 from '../assets/images/thumbs/04.jpg'
-import logo from '../assets/images/website-icon.png'
 import Gallery from '../components/Gallery'
 import Contact from '../components/Contact'
 import Layout from '../components/layout'
 import { Link } from 'gatsby'
+import { StaticImage } from "gatsby-plugin-image";
 
 const DEFAULT_IMAGES = [
   {
@@ -31,7 +31,7 @@ const DEFAULT_IMAGES = [
     source: full02,
     thumbnail: thumb02,
     caption: 'Project 2 - [bib.lio.file]',
-    description: 'HTML/CSS/Javascript/Mongoose/Express.js/Node.js',
+    description: 'Mongoose/Express.js/Node.js',
     github: 'https://github.com/rockyliwanag/bib-yo-file',
     info: '/portfolio/webdev/ga/bibliofile/',
     site: 'https://bib-lio-file.herokuapp.com',
@@ -51,7 +51,7 @@ const DEFAULT_IMAGES = [
     source: full04,
     thumbnail: thumb04,
     caption: 'Project 4 - SWANK',
-    description: 'HTML/CSS/Javascript/Mongoose/Express/React/Node',
+    description: 'MongoDB/Express/React/Node',
     github: 'https://github.com/rockyliwanag/SWANK',
     info: '/portfolio/webdev/ga/swank/',
     site: 'https://swank.herokuapp.com',
@@ -73,14 +73,15 @@ const HomeIndex = () => {
         <section id="one">
           <header className="major">
             <div id="index-logo">
-              <img className="hero-logo" src={logo} alt="Studio Rock Logo" />
+              <StaticImage src='../assets/images/Logos/sr-full.png' alt="Studio Rock Logo" />
             </div>
-            <h2>
+            {/* <h2>
               Welcome to <span> StudioRock. </span> <br />
               Please, poke around.
-            </h2>
+            </h2> */}
+
           </header>
-          <p>
+          <p style={{textAlign: "justify"}}>
             Welcome to Studio Rock Production, I'm Rocky Liwanag, a software
             engineer, UX / UI and graphic artist. I've designed everything from
             apparel to websites and continue to explore the intersection of

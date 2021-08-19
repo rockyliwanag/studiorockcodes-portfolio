@@ -1,21 +1,20 @@
 import React from 'react'
 import Footer from './Footer'
-import avatar from '../assets/images/avatar.jpg'
 import { Link } from 'gatsby'
+import { StaticImage } from 'gatsby-plugin-image'
 
 const Header = () => (
   <header id="header">
       <a href="/" className="image avatar">
-        <img src={avatar} alt="" />
+        <StaticImage src='../assets/images/avatar.jpg' alt="Profile Picture" />
       </a>
     <div className="inner">
-      <h1><strong> I am Rocky </strong><span>,</span></h1>
+      <h1><strong> I am Rocky </strong><span>, </span></h1>&nbsp;&nbsp;
         <b>
           <div className='innerIam'>
             <h1>
             a web developer. <br /> 
             a graphic designer. <br />
-            {/* a photographer. <br /> */}
             an artist. <br />
             </h1>
           </div>

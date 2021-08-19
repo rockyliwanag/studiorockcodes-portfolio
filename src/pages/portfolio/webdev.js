@@ -24,7 +24,7 @@ const Webdev = () => {
           <div className="icon fa-arrow-left">&nbsp;Portfolio</div>
         </Link>
         <h1>Web Development</h1>
-        <p>My first venture and interest into web development started in 2010, with creating mock-ups on photoshop and turning it into a website using Wix,
+        <p style={{textAlign:'justify'}}>My first venture and interest into web development started in 2010, with creating mock-ups on photoshop and turning it into a website using Wix,
            when it still used flash as its platform. As I did more Graphic Design, I did not get into programming until as recent as 3 years ago. Seeing how 
            much web technology has changed my environment, it inspired me to learn how to code and so I joined General Assembly's Software Engineering bootcamp and finished April 2020.
            <br/>

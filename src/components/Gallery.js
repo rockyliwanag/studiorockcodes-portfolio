@@ -26,17 +26,20 @@ const Gallery = ({ images }) => {
               toggleLightbox(i)
             }}
           >
-            <img src={obj.thumbnail} alt="" />
+            <img src={obj.thumbnail} alt={obj.title} />
           </a>
-          <h3> {obj.caption} </h3> <p> {obj.description} </p>
-          {obj.info && obj.site ? 
-            <div>
-              <Link to={obj.info}>More Info</Link> &nbsp; &nbsp; &nbsp; &nbsp;
-              <a href={obj.site} target="_blank" rel="noopener noreferrer">
-                Visit Site
-              </a>
-            </div>
-          : null }
+          <div className="details">
+            <h3> {obj.caption} </h3> 
+            <p> {obj.description} </p>
+            {obj.info && obj.site ? 
+              <div>
+                <Link to={obj.info}>More Info</Link> &nbsp; &nbsp; &nbsp; &nbsp;
+                <a href={obj.site} target="_blank" rel="noopener noreferrer">
+                  Visit Site
+                </a>
+              </div>
+            : null }
+          </div>
         </article>
       )
     })

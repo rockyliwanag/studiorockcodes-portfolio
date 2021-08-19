@@ -596,8 +596,8 @@ input[type='radio'] {
 
   &.fit {
     display: block;
-    margin: 0 0 _size(element-margin) 0;
-    width: 100%;
+    margin: 0 auto 0.4em auto;
+    width: 95%;
 
     img {
       width: 100%;
@@ -615,6 +615,27 @@ input[type='radio'] {
       border-radius: 100%;
       width: 100%;
     }
+  }
+}
+
+.details {
+  border: black solid 1.5px;
+  border-radius: 1em;
+  padding: 0.4em;
+  h3,
+  p {
+    margin-bottom: 0;
+  }
+  h3 {
+    padding-left: 1em;
+  }
+  p {
+    word-wrap: break-word;
+    padding-left: 1.4em;
+  }
+  div {
+    display: flex;
+    justify-content: space-around;
   }
 }
 
@@ -979,7 +1000,7 @@ input[type='button'],
   @include vendor('display', 'flex');
   @include vendor('flex-direction', 'column');
   @include vendor('align-items', 'flex-end');
-  @include vendor('justify-content', 'space-between');
+  @include vendor('justify-content', 'space-evenly');
   background-color: _palette(accent2, bg);
   background-attachment: scroll, fixed;
   background-image: url('images/overlay.png'), url('../images/bg.jpg');
@@ -1026,14 +1047,15 @@ input[type='button'],
   }
 
   .image.avatar {
-    margin: 0 0 (_size(element-margin) * 0.5) 0;
+    margin: 0 0 (_size(element-margin) * 1.5) 0;
     width: 6.25em;
+    // align-self: center;
   }
 
   .links {
     ul {
       list-style: none;
-
+      margin: 2em 0;
       li {
         .navItemActive {
           font-weight: 900;
@@ -1052,7 +1074,7 @@ input[type='button'],
     span,
     strong {
       display: inline-block;
-      margin-right: 0.3em;
+      // margin-right: 0.3em;
     }
     b {
       float: right;
@@ -1233,6 +1255,10 @@ input[type='button'],
       border-top: 0;
       margin-top: 0;
       padding-top: 0;
+    }
+    .gallery-row,
+    .tile-item {
+      margin-bottom: 1.5em;
     }
   }
 

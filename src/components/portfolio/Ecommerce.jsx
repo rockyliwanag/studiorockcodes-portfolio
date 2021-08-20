@@ -46,7 +46,7 @@ const Ecommerce = () => {
             image={node.frontmatter.logo.childImageSharp.gatsbyImageData}
             alt={node.frontmatter.title}
             className="card-image" />
-          <div className='title'>
+          <div className="title">
             <h3> {node.frontmatter.title} </h3>
           </div>
         </div>

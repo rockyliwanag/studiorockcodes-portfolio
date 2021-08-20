@@ -3,7 +3,7 @@ import { graphql, useStaticQuery } from 'gatsby'
 import Gallery from '../Gallery'
 
 
-const Ah = () => {
+const IpGallery = () => {
   const { allMdx } = useStaticQuery(
     graphql`query IndexQueryInstapassGallery {
   allMdx(filter: {frontmatter: {category: {eq: "ecommerce"}, title: {eq: "Instapass"}}}) {
@@ -57,4 +57,4 @@ const Ah = () => {
   ));
 }
 
-export default Ah
+export default IpGallery

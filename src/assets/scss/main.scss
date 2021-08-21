@@ -619,8 +619,8 @@ input[type='radio'] {
 }
 
 .details {
-  border: black solid 1.5px;
-  border-radius: 1em;
+  // border: black solid 1.5px;
+  // border-radius: 1em;
   padding: 0.4em;
   h3,
   p {
@@ -1259,6 +1259,11 @@ input[type='button'],
     .gallery-row,
     .tile-item {
       margin-bottom: 1.5em;
+    }
+    .tile-item {
+      padding: 0.5em 0;
+      border: rgba(80, 80, 80, 0.356) solid 2px;
+      border-radius: 1em;
     }
   }
 

@@ -3,7 +3,7 @@ import { graphql, useStaticQuery } from 'gatsby'
 import Gallery from '../Gallery'
 
 
-const Shirts = () => {
+const ShirtGallery = () => {
   const { allMdx } = useStaticQuery(
     graphql`query IndexQueryShirtGallery {
   allMdx(filter: {frontmatter: {category: {eq: "shirt"}}}) {
@@ -56,4 +56,4 @@ const Shirts = () => {
   ));
 }
 
-export default Shirts
+export default ShirtGallery

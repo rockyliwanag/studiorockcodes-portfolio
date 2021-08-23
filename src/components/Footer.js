@@ -1,4 +1,5 @@
 import React from 'react'
+import MailTo from './ButtonMailTo'
 
 const Footer = () => (
   <div id="footer">
@@ -9,26 +10,18 @@ const Footer = () => (
             href="https://twitter.com/studiorockcodes"
             className="icon fa-twitter"
           >
-            <span className="label"> Twitter </span>
+            {/* <span className="label"> Twitter </span> */}
           </a>
         </li>
         <li>
           <a href="https://github.com/rockyliwanag" className="icon fa-github">
-            <span className="label"> Github </span>
+            {/* <span className="label"> Github </span> */}
           </a>
         </li>
-        {/* <li>
-          <a href="#" className="icon fa-dribbble">
-            <span className="label"> Dribbble </span>
-          </a>
-        </li> */}
         <li>
-          <a
-            href="mailto:rocky.liwanag@outlook.com?Subject=Portfolio%20message"
-            className="icon fa-envelope-o"
-          >
-            <span className="label"> Email </span>
-          </a>
+          <MailTo mailto="mailto:rocky.liwanag@outlook.com"/>
+   
+          
         </li>
       </ul>
       <ul className="copyright">

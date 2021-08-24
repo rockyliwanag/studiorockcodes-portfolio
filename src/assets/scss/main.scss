@@ -1278,13 +1278,21 @@ input[type='button'],
 
 video#category {
   width: 300px;
-  height: 500px;
+  height: 250px;
   object-fit: cover;
   object-position: center top;
   z-index: -1;
   position: absolute;
   border: 1.5px solid rgba(80, 80, 80, 0.555);
   border-radius: 1.5em;
+  // filter: grayscale(1);
+  // -webkit-filter: grayscale(1);
+  // filter: grayscale(100%);
+  &:hover {
+    filter: grayscale(1);
+    -webkit-filter: grayscale(1);
+    filter: grayscale(100%);
+  }
 }
 
 .alternate {

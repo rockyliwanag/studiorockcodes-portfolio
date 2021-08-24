@@ -1,15 +1,11 @@
 import React from 'react'
-import MailTo from './ButtonMailTo'
 
 const Footer = () => (
   <div id="footer">
     <div className="inner">
       <ul className="icons">
         <li>
-          <a
-            href="https://twitter.com/studiorockcodes"
-            className="icon fa-twitter"
-          >
+          <a href="https://twitter.com/studiorockcodes" className="icon fa-twitter">
             {/* <span className="label"> Twitter </span> */}
           </a>
         </li>
@@ -19,9 +15,9 @@ const Footer = () => (
           </a>
         </li>
         <li>
-          <MailTo mailto="mailto:rocky.liwanag@outlook.com"/>
-   
-          
+          <a href="/message" className="icon fa-envelope-o" >
+            {/* <span className="label"> Email </span> */}
+          </a>
         </li>
       </ul>
       <ul className="copyright">

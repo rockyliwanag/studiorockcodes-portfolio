@@ -22,7 +22,7 @@ const Projects = ({ data }) => {
           { !images ? <GatsbyImage image={featuredImgFluid} alt="" /> : 
 
           <div>
-            <Carousel infiniteLoop autoPlay interval='5000' showThumbs={false}>
+            <Carousel infiniteLoop autoPlay interval='5000' showThumbs={true}>
             {images.map(({id, source}) => (
                 <div key={id}>
                   <GatsbyImage image={source.childImageSharp.gatsbyImageData} alt="" />

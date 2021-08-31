@@ -1,7 +1,7 @@
 import React from 'react'
 import { graphql, Link } from 'gatsby'
 import { MDXRenderer } from 'gatsby-plugin-mdx'
-import 'react-responsive-carousel/lib/styles/carousel.min.css'
+import '../assets/css/carousel.min.css'
 import {Carousel} from 'react-responsive-carousel'
 import Layout from '../components/layout'
 import { GatsbyImage } from "gatsby-plugin-image";
@@ -22,7 +22,7 @@ const Projects = ({ data }) => {
           { !images ? <GatsbyImage image={featuredImgFluid} alt="" /> : 
 
           <div>
-            <Carousel infiniteLoop autoPlay interval='5000' showThumbs={true}>
+            <Carousel infiniteLoop autoPlay interval='5000' showThumbs={true} fade={true} >
             {images.map(({id, source}) => (
                 <div key={id}>
                   <GatsbyImage image={source.childImageSharp.gatsbyImageData} alt="" />

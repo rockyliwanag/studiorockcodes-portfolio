@@ -24,7 +24,7 @@ const Footer = () => (
         <li> &copy; StudioRock </li>
         <li>
           Design by:
-          <a href="https://www.linkedin.com/rocky-liwanag"> ROCKY LIWANAG </a>
+          <a href="https://www.linkedin.com/in/rocky-liwanag"> ROCKY LIWANAG </a>
         </li>
       </ul>
     </div>

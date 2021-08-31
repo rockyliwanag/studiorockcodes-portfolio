@@ -12,19 +12,16 @@
 section {
   &#container-wrapper {
     margin-top: 0;
-    height: 100%;
     display: grid;
     grid-template-columns: 33% 33% 33%;
     grid-column-gap: 1em;
   }
 
   .video-overlay {
-    height: 250px;
-    width: 300px;
     border-radius: 1.5em;
     position: absolute;
     z-index: -1;
-    background: rgba(18, 19, 18, 0.383);
+    background: rgba(18, 19, 18, 0.52);
   }
 
   a {
@@ -50,10 +47,12 @@ div.category-icon {
 }
 
 div.category-container {
-  height: 200px;
+  height: 300px;
+  padding-top: 2em;
   filter: grayscale(1);
   -webkit-filter: grayscale(1);
   filter: grayscale(100%);
+
   a {
     display: flex;
     flex-direction: column;

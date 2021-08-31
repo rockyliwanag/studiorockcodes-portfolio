@@ -960,10 +960,6 @@ input[type='button'],
     }
   }
 
-  // &.category-container {
-  //   height: 10rem;
-  // }
-
   &.disabled,
   &:disabled {
     background-color: _palette(border2-bg) !important;
@@ -1049,7 +1045,6 @@ input[type='button'],
   .image.avatar {
     margin: 0 0 (_size(element-margin) * 1.5) 0;
     width: 6.25em;
-    // align-self: center;
   }
 
   .links {
@@ -1074,7 +1069,6 @@ input[type='button'],
     span,
     strong {
       display: inline-block;
-      // margin-right: 0.3em;
     }
     b {
       float: right;
@@ -1278,21 +1272,18 @@ input[type='button'],
 
 video#category {
   width: 300px;
-  height: 250px;
+  height: 300px;
   object-fit: cover;
   object-position: center top;
   z-index: -1;
   position: absolute;
-  border: 1.5px solid rgba(80, 80, 80, 0.555);
-  border-radius: 1.5em;
-  // filter: grayscale(1);
-  // -webkit-filter: grayscale(1);
-  // filter: grayscale(100%);
-  &:hover {
-    filter: grayscale(1);
-    -webkit-filter: grayscale(1);
-    filter: grayscale(100%);
-  }
+  border: 2px solid rgba(44, 44, 44, 0.746);
+  border-radius: 0.83em;
+}
+div.video-overlay {
+  height: 300px;
+  width: 300px;
+  border-radius: 0.83em;
 }
 
 .alternate {
@@ -1504,12 +1495,12 @@ body.is-touch {
   }
 
   video#category {
-    width: 250px;
-    height: 450px;
+    width: 200px;
+    height: 200px;
   }
   div.video-overlay {
-    height: 450px;
-    width: 250px;
+    height: 200px;
+    width: 200px;
   }
 }
 
@@ -1560,12 +1551,12 @@ body.is-touch {
   }
 
   video#category {
-    width: 200px;
-    height: 400px;
+    width: 350px;
+    height: 350px;
   }
   div.video-overlay {
-    height: 400px;
-    width: 200px;
+    height: 350px;
+    width: 350px;
   }
 }
 

@@ -24,12 +24,13 @@ const Design = () => {
           <div className="icon fa-arrow-left">&nbsp;Portfolio</div>
         </Link>
         <h1>Graphic Design</h1>
-        <h4>Lorem ipsum dolor al cabron</h4>
+        <p>I fell in-love with graphic design when I first encountered MS Paint when I was about 8 years old. My Dad's accountant had me play with his computer as he did my Dad's taxes. After messing around for a bit, I found and opened a file called monalisa.bmp, and that was when I was amazed at how a bunch of small black squares was able to make a picture when zoomed out.</p> <br/>
+        <br/>
+        <p>To me, Graphic Design is freedom. I can make anything possible, as far as my imagination can stretch. It also fascinates me how Graphic Design can manipulate its audience on how to feel or think.</p>
         <section>
           <h2>Logos</h2>
           <p>
-            These were projects that I made during my General Assembly's
-            Software Engineering bootcamp.
+            These were some of the logos that I have created.
           </p>
           <div id="categories">
             <Logo />
